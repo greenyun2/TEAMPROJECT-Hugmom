@@ -1,0 +1,129 @@
+.footer {
+  width: 100%;
+  height: 200px;
+  /* height: 275px; */
+}
+.footer_inner {
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Footer_Left */
+.footer_left h4 {
+  font-family: var(--eng);
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.footer_left h4 span {
+  font-family: var(--kor);
+  font-weight: bold;
+}
+.footer_info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--dark-gray);
+}
+.footer_info p {
+  font-size: 14px;
+}
+/* Footer_Right */
+
+.footer_cs {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--dark-gray);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.footer_cs p {
+  font-size: 14px;
+}
+.footer_cs p.cs_tel {
+  font-size: 20px;
+  color: var(--black);
+  font-weight: bold;
+}
+.footer_sns_btn {
+  display: flex;
+  justify-content: flex-end;
+}
+.footer_sns_btn a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 10px;
+  /* color: var(--white); */
+  overflow: hidden;
+}
+.footer_sns_btn a img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+@media all and (max-width: 768px) {
+  .footer {
+    width: 100vw;
+    height: 300px;
+    padding: 10px 20px;
+  }
+  .footer_inner {
+    width: 100vw;
+    height: inherit;
+
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  /* Footer_Right */
+  .footer_sns_btn {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .footer_sns_btn a {
+    width: 30px;
+    height: 30px;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+  .footer_right {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .footer_cs {
+    align-items: flex-start;
+    font-size: 12px;
+    margin-top: 10px;
+    gap: 7px;
+  }
+  .cs_tel {
+    font-size: 16px;
+  }
+
+  /* Footer_Left */
+  .footer_left h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .footer_info {
+    gap: 8px;
+    font-size: 14px;
+  }
+  .footer_info p {
+    font-size: 12px;
+  }
+  .copyright {
+    width: 100vw;
+    margin-top: 20px;
+    text-align: center;
+  }
+}

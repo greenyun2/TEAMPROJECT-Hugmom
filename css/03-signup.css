@@ -1,0 +1,995 @@
+/* Container */
+.container.signup_page {
+  width: 100vw;
+  height: 100%;
+  font-family: var(--kor);
+}
+/* ### Signup Page Main ### */
+.signup_page_main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 1280px;
+  font-family: var(--kor);
+}
+/* signup_form_wrap */
+.signup_form_wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 3px solid var(--main-green);
+}
+/* ### Signup Page Logo Section ### */
+.signup_page_logobox_section {
+  width: 100%;
+  /* height: 440px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup_page_logo {
+  width: 520px;
+  height: 11.0625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Signup Page User Info Main Title Section */
+.signup_page_user_info_main_tit_section {
+  border-bottom: 3px solid var(--main-green);
+  width: 100%;
+  height: 4.375rem;
+  display: flex;
+  align-items: flex-end;
+}
+.signup_page_user_info_main_tit_section h1 {
+  font-size: 2rem;
+  color: var(--main-green);
+  font-family: var(--kor);
+  padding: 0 0.875rem 1rem 0;
+  margin-left: 0.625rem;
+}
+.signup_page_user_info_main_tit_section span {
+  font-size: 1.125rem;
+  color: var(--black);
+  font-family: var(--kor);
+  padding-bottom: 1rem;
+}
+.signup_page_user_info_main_tit_section span strong {
+  color: var(--red);
+}
+
+/* ### Signup Page User Info Form Section ### */
+.signup_page_user_info_form_section {
+  border-bottom: 1px solid var(--main-green);
+  width: 1180px;
+  display: flex;
+  flex-direction: column;
+}
+/* Signup Page User Info Form Sub Title */
+.user_info_sub_tit {
+  width: 100%;
+  margin: 1.75rem 0 3.125rem 6.6875rem;
+}
+.user_info_sub_tit h1 {
+  color: var(--main-green);
+  font-family: var(--kor);
+}
+/* Signup Page User Info Form  */
+.user_info_form {
+  width: 73.75rem;
+  height: 46.5625rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 12.8125rem;
+}
+/* ## User Info Form Line ## */
+.user_info_form_line.line_name,
+.user_info_form_line.line_pw,
+.user_info_form_line.line_confirm_pw,
+.user_info_form_line.line_birth_date,
+.user_info_form_line.line_email {
+  width: 32.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+/* # User Info Form Line Common Input & Label # */
+.user_info_form_line.line_name input,
+.user_info_form_line.line_id input,
+.user_info_form_line.line_pw input,
+.user_info_form_line.line_confirm_pw input,
+.user_info_form_line.line_birth_date input,
+.user_info_form_line.line_email input,
+.user_info_form_line.line_pregnant_women_code input {
+  width: 19.0625rem;
+  height: 2.1875rem;
+  outline: 0;
+  padding-left: 0.625rem;
+  border: 2px solid var(--light-gray);
+  border-radius: 5px;
+}
+.user_info_form_line label {
+  font-size: 1.125rem;
+  color: var(--black);
+}
+.user_info_form_line label strong {
+  color: var(--red);
+}
+.user_info_form_line input:focus {
+  border-color: var(--main-green);
+}
+
+/* # User Info Form Line line ID # */
+.user_info_form_line.line_id {
+  display: flex;
+  align-items: center;
+}
+.user_info_form_line.line_id input {
+  margin: 0 1.125rem 0 9.5rem;
+}
+.line_id_check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line_id_check button {
+  margin-right: 1.375rem;
+  width: 5.4375rem;
+  height: 2.1875rem;
+  background-color: var(--gray);
+  font-family: var(--kor);
+  color: var(--black);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+/* # User Info Form Line line Tel # */
+.user_info_form_line.line_tel {
+  width: 39.5625rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user_info_form_line.line_tel div {
+  display: flex;
+  align-items: center;
+}
+.user_info_form_line.line_tel div div {
+  width: 19.0625rem;
+  margin-right: 1.125rem;
+  display: flex;
+  justify-content: space-between;
+}
+.user_info_form_line.line_tel input[type="text"] {
+  width: 5.5625rem;
+  height: 2.1875rem;
+  outline: 0;
+  border: 2px solid var(--light-gray);
+  border-radius: 5px;
+  text-align: center;
+}
+.user_info_form_line.line_tel input[type="text"]:focus {
+  border-color: var(--main-green);
+}
+/* Token */
+.token_wrap {
+  width: 19.0625rem;
+  height: 2.1875rem;
+
+  margin-left: 220px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 2px solid var(--light-gray);
+  border-radius: 5px;
+}
+.token_wrap .token_wrapper {
+  margin-left: 10px;
+  color: var(--gray);
+}
+.token_wrap .token_number {
+  color: var(--main-green);
+}
+.token_wrap .token_timer {
+  height: 100%;
+  margin-right: 10px;
+  color: var(--red);
+  display: flex;
+  align-items: center;
+}
+/*  */
+.line_tel_certified {
+  width: 39.5625rem;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 11.25rem;
+}
+.line_tel_certified input {
+  width: 19.0625rem;
+  height: 2.1875rem;
+  outline: 0;
+  padding-left: 0.625rem;
+  border: 2px solid var(--light-gray);
+  border-radius: 5px;
+  margin-right: 1.125rem;
+}
+.line_tel_certified button {
+  width: 5.5625rem;
+  height: 2.1875rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--gray);
+  color: var(--black);
+  font-family: var(--kor);
+  font-size: 1rem;
+}
+.user_info_form_line.line_tel button {
+  width: 5.5625rem;
+  height: 2.1875rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--gray);
+  color: var(--black);
+  font-family: var(--kor);
+  font-size: 1rem;
+}
+/* # User Info Form Line line Address # */
+.user_info_form_line.line_address {
+  width: 32.875rem;
+  height: 8.5625rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.user_info_form_line.line_address div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.user_info_form_line.line_address div div {
+  display: flex;
+  flex-direction: row;
+}
+.user_info_form_line.line_address div div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user_info_form_line.line_address div div:first-child input {
+  width: 9.75rem;
+  height: 2.1875rem;
+  outline: 0;
+  padding-left: 0.625rem;
+  border: 2px solid var(--light-gray);
+  border-radius: 5px;
+}
+.user_info_form_line.line_address div div:first-child input:focus {
+  border-color: var(--main-green);
+}
+.user_info_form_line.line_address div div:first-child button {
+  width: 7.5625rem;
+  height: 2.1875rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--main-green);
+  color: var(--white);
+  font-family: var(--kor);
+  font-size: 1rem;
+}
+.user_info_form_line.line_address div div:nth-child(2) input {
+  width: 19.0625rem;
+  height: 2.1875rem;
+  outline: 0;
+  padding-left: 0.625rem;
+  border: 2px solid var(--light-gray);
+  border-radius: 5px;
+}
+.user_info_form_line.line_address div div:nth-child(2) input:focus {
+  border-color: var(--main-green);
+}
+.user_info_form_line.line_address div div:last-child input {
+  width: 19.0625rem;
+  height: 2.1875rem;
+  outline: 0;
+  padding-left: 0.625rem;
+  border: 2px solid var(--light-gray);
+  border-radius: 5px;
+}
+.user_info_form_line.line_address div div:last-child input:focus {
+  border-color: var(--main-green);
+}
+
+/* # User Info Form Line Address # */
+.user_info_form_line.line_pregnant_women_code {
+  width: 44.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+.user_info_form_line.line_pregnant_women_code div {
+  width: 30.4375rem;
+}
+.pregnant_women_code_result {
+  margin-top: 0.625rem;
+  color: var(--red);
+}
+.error {
+  margin-left: 250px;
+  color: var(--red);
+
+  font-size: 14px;
+
+  /* display: none; */
+}
+/* .error.show_name {
+  display: block;
+} */
+.error.show_pw_1 {
+  display: block;
+}
+.error.show_pw_2 {
+  display: block;
+}
+.error.show_birth {
+  display: block;
+}
+.error.show_birth {
+  display: block;
+}
+.error.show_email {
+  display: block;
+}
+
+/* ### Carecenter Info Section ### */
+.signup_page_carecenter_info_section {
+  display: flex;
+  flex-direction: column;
+  width: 1180px;
+  border-bottom: 1px solid var(--main-green);
+}
+.carecenter_info_wrap {
+  margin-left: 12.8125rem;
+  display: flex;
+  margin-bottom: 4.75rem;
+}
+.carecenter_info_wrap label {
+  font-size: 1.125rem;
+  color: var(--black);
+  margin-right: 4.75rem;
+}
+.carecenter_info_wrap label strong {
+  color: var(--red);
+}
+.carecenter_info_content {
+  width: 32.5625rem;
+}
+.carecenter_info_content div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+}
+.carecenter_info_content input[name="carecenter_info"] {
+  width: 19.0625rem;
+  height: 2.1875rem;
+  outline: 0;
+  padding-left: 0.625rem;
+  border: 2px solid var(--light-gray);
+  border-radius: 5px;
+  margin: 0 1.375rem 0.9375rem 0;
+}
+.carecenter_info_content input[name="carecenter_info"]:focus {
+  border-color: var(--main-green);
+}
+.carecenter_info_content button {
+  width: 11.875rem;
+  height: 2.1875rem;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--main-green);
+  color: var(--white);
+  font-family: var(--kor);
+  font-size: 1rem;
+}
+.carecenter_info_content input[name="carecenter_info_sub"] {
+  width: 32.5625rem;
+  height: 2.1875rem;
+  outline: 0;
+  padding-left: 0.625rem;
+  border: 2px solid var(--light-gray);
+  border-radius: 5px;
+  margin-right: 1.375rem;
+}
+.carecenter_info_content input[name="carecenter_info_sub"]:focus {
+  border-color: var(--main-green);
+}
+
+/* ### Signup Page Guardian Info Section ### */
+.signup_page_guardian_info_section {
+  width: 1180px;
+  display: flex;
+  flex-direction: column;
+}
+.guardian_info_tit {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 1.75rem 0 3.125rem 6.6875rem;
+  position: relative;
+}
+.guardian_info_tit h1 {
+  color: var(--main-green);
+}
+.guardian_info_tit h1 span {
+  position: absolute;
+  top: 0.1875rem;
+  color: var(--black);
+  font-size: 1.125rem;
+  margin-left: 0.625rem;
+}
+.guardian_info_tit p {
+  font-size: 1.125rem;
+  color: var(--dark-gray);
+  margin-top: 0.9375rem;
+}
+.guardian_info_wrap {
+  margin: 0 0 4.75rem 12.8125rem;
+  display: flex;
+  flex-direction: column;
+}
+.guardian_info_content {
+  margin-bottom: 1.375rem;
+}
+.guardian_info_content:last-child {
+  margin-bottom: 0;
+}
+
+.guardian_info_content label {
+  font-size: 1.125rem;
+  margin-right: 108px;
+  color: var(--black);
+}
+.guardian_info_content:first-child label {
+  margin-right: 125px;
+}
+.guardian_info_content input {
+  width: 305px;
+  height: 35px;
+  outline: 0;
+  padding-left: 10px;
+  border: 2px solid var(--light-gray);
+  border-radius: 5px;
+}
+.guardian_info_content input:focus {
+  border-color: var(--main-green);
+}
+
+/* ### Signup Page Agreement Section ### */
+.signup_page_agreement_section {
+  width: 100%;
+  height: 642px;
+  margin-top: 30px;
+}
+.agreement_tit {
+  width: 1094px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.agreement_tit h1 {
+  color: var(--main-green);
+}
+.agreement_tit button {
+  width: 120px;
+  height: 35px;
+  background-color: var(--main-green);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  font-family: var(--kor);
+  font-size: 16px;
+}
+.agreement_tit + hr {
+  width: 1180px;
+  margin: 0 auto;
+  margin-top: 33px;
+  border: 1px solid var(--main-green);
+}
+.agreement_contents_wrap {
+  width: 1180px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--gray);
+  font-size: 18px;
+}
+.agreement_contents_item {
+  padding: 10px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.agreement_contents_item input[type="checkbox"] {
+  opacity: 0;
+  width: 18px;
+  height: 18px;
+  z-index: 1;
+}
+.agreement_contents_item input[type="checkbox"]:checked + .fa-circle-check {
+  color: var(--main-green);
+}
+.agreement_contents_item label {
+  margin-left: 9px;
+}
+
+.agreement_contents_item .fa-circle-check {
+  font-size: 32px;
+  color: var(--light-gray);
+}
+#agreement_circle_1.check {
+  color: var(--main-green);
+}
+#agreement_circle_2.check {
+  color: var(--main-green);
+}
+#agreement_circle_3.check {
+  color: var(--main-green);
+}
+.agreement_contents_item .fa-chevron-right {
+  font-size: 14px;
+  color: var(--black);
+  margin-right: 5px;
+}
+.agreement_contents_item a {
+  color: var(--black);
+}
+.agreement_contents_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 82px;
+}
+.agreement_contents_btn button {
+  width: 414px;
+  height: 70px;
+  background-color: var(--main-green);
+  color: var(--white);
+  font-family: var(--kor);
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+@media all and (max-width: 768px) {
+  /* Container */
+  .container.signup_page {
+    width: 100vw;
+    height: 100%;
+  }
+  /* Main */
+  .signup_page_main {
+    width: 100vw;
+  }
+  .signup_form_wrap {
+    width: 100vw;
+    border-bottom: 0;
+  }
+  /* Logo */
+  .signup_page_logobox_section {
+    width: 95%;
+    margin-bottom: 20px;
+  }
+  /* Main Title */
+  .signup_page_user_info_main_tit_section {
+    width: 90%;
+    height: 100%;
+    justify-content: flex-start;
+  }
+  .signup_page_user_info_main_tit_section h1 {
+    font-size: 24px;
+  }
+  .signup_page_user_info_main_tit_section span {
+    font-size: 16px;
+  }
+
+  /* #### Form Section #### */
+  .signup_page_user_info_form_section {
+    width: 100vw;
+    border-bottom: 0;
+  }
+  .user_info_sub_tit {
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+  .user_info_form {
+    margin: 0 auto;
+    width: 90%;
+    height: 100%;
+    /* border: 2px solid var(--gray); */
+    margin-bottom: 20px;
+    border-radius: 5px;
+    position: relative;
+  }
+  .user_info_form_line.line_confirm_pw label {
+    width: 100%;
+  }
+  /* Form Line */
+  .user_info_form_line.line_name,
+  .user_info_form_line.line_pw,
+  .user_info_form_line.line_confirm_pw,
+  .user_info_form_line.line_birth_date,
+  .user_info_form_line.line_email {
+    /* border-bottom: 1px solid var(--gray); */
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+}
+.user_info_form_line {
+  display: flex;
+  flex-direction: column;
+}
+/* # User Info Form Line Common Input & Label # */
+.user_info_form_line.line_name input,
+.user_info_form_line.line_pw input,
+.user_info_form_line.line_confirm_pw input,
+.user_info_form_line.line_birth_date input,
+.user_info_form_line.line_email input,
+.user_info_form_line.line_pregnant_women_code input {
+  width: 97%;
+  /* text-align: center; */
+  margin-bottom: 5px;
+  padding: 10px;
+  margin-left: 5px;
+}
+
+.user_info_form label {
+  width: 100px;
+}
+.user_info_form_line label {
+  font-size: 14px;
+  padding: 10px 0 10px 10px;
+}
+.user_info_form_line label strong {
+  color: var(--red);
+}
+.user_info_form_line input:focus {
+  border-color: var(--main-green);
+}
+/* From Id Line */
+  .user_info_form_line.line_id {
+    align-items: flex-start;
+    border-bottom: 1px solid var(--gray);
+  }
+  .user_info_form_line.line_id input {
+    margin: 0;
+    width: 97%;
+    margin-bottom: 10px;
+    /* text-align: center; */
+    margin-left: 5px;
+  }
+  .line_id_check {
+    display: flex;
+    justify-content: space-between;
+  }
+  .line_id_check button {
+    margin-left: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .id_check_result {
+    order: 1;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: var(--main-green);
+  }
+  /* Form Tel Line */
+  .user_info_form_line.line_tel {
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .user_info_form_line.line_tel input:first-child {
+    margin-left: 5px;
+  }
+  .user_info_form_line.line_tel div {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .user_info_form_line.line_tel div div {
+    width: 300px;
+  }
+  .user_info_form_line.line_tel button {
+    margin-right: 10px;
+    font-size: 14px;
+    padding: 5px;
+  }
+  .line_tel_certified {
+    width: 100%;
+    margin-top: 5px;
+    padding-left: 5px;
+    border-bottom: 1px solid var(--gray);
+    padding-bottom: 10px;
+    justify-content: space-between;
+  }
+  .line_tel_certified input {
+    width: 300px;
+  }
+  .line_tel_certified button {
+    margin-right: 10px;
+    font-size: 14px;
+
+  }
+  /* Token */
+  .token_wrap {
+    width: 97%;
+    margin-left: 5px;
+    margin-bottom: 5px;
+  }
+  .token_wrapper .token_number {
+    margin-right: 0;
+  }
+
+  /* Form Address Line */
+  .user_info_form_line.line_address {
+    width: 100%;
+    height: 100%;
+
+    border-bottom: 1px solid var(--gray);
+  }
+  .user_info_form_line.line_address .address_wrap {
+    width: 100%;
+    height: 100%;
+  }
+  .user_info_form_line.line_address div {
+    margin-bottom: 5px;
+  }
+  .address_wrap .address_wrap_first {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .address_wrap .address_wrap_first input {
+    flex: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+    /* text-align: center; */
+  }
+  .user_info_form_line.line_address div div:first-child button {
+    font-size: 14px;
+    margin-right: 5px;
+  }
+  .address_wrap .address_wrap_second input {
+    width: 100%;
+    flex: 1;
+    /* text-align: center; */
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .address_wrap .address_wrap_third input {
+    flex: 1;
+    /* text-align: center; */
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  /* Form Code Line */
+  .user_info_form_line.line_pregnant_women_code {
+    border-bottom: 1px solid var(--gray);
+  }
+  .user_info_form_line.line_pregnant_women_code {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .user_info_form_line.line_pregnant_women_code div {
+    width: 100%;
+  }
+  .pregnant_women_code_result {
+    margin-top: 0;
+    color: var(--red);
+    font-size: 12px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+  }
+  .error {
+    margin-left: 10px;
+    display: flex;
+    /* justify-content: center; */
+
+    /* display: none; */
+  }
+  /* .error.show_name {
+    display: block;
+  }
+  .error.show_pw_1 {
+    display: block;
+  }
+  .error.show_pw_2 {
+    display: block;
+  }
+  .error.show_birth {
+    display: block;
+  }
+  .error.show_birth {
+    display: block;
+  }
+  .error.show_email {
+    display: block;
+  } */
+  /* ### Carecenter Info Section ### */
+  .signup_page_carecenter_info_section {
+    width: 95%;
+  }
+  .carecenter_info_wrap {
+    width: 95%;
+    margin-left: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    /* border: 2px solid var(--gray); */
+    border-radius: 5px;
+  }
+  .carecenter_info_wrap label {
+    font-size: 14px;
+    color: var(--black);
+    padding: 10px 0 10px 10px;
+  }
+  .carecenter_info_wrap label strong {
+    color: var(--red);
+  }
+  .carecenter_info_content {
+    width: 100%;
+  }
+  .carecenter_info_content div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+  }
+  .carecenter_info_content input[name="carecenter_info"] {
+    margin-left: 5px;
+  }
+  .carecenter_info_content button {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  .carecenter_info_content input[name="carecenter_info_sub"] {
+    width: 97%;
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+  /* 보호자 정보 */
+  .signup_page_guardian_info_section {
+    width: 95%;
+    border-bottom: 0;
+  }
+  /* Title */
+  .guardian_info_tit {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  .guardian_info_tit h1 {
+    margin: 0;
+    margin-left: 15px;
+    /* margin-bottom: 30px; */
+  }
+  .guardian_info_tit p {
+    font-size: 14px;
+    margin-left: 15px;
+  }
+  /* Content */
+  .guardian_info_wrap {
+    width: 95%;
+
+    margin-left: 0;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    
+    /* border: 2px solid var(--gray); */
+    border-radius: 5px;
+  }
+  .guardian_info_content {
+    width: 100%;
+    height: 85px;
+    margin-bottom: 0;
+    margin-bottom: 10px;
+    /* border: 2px solid var(--gray); */
+    border-radius: 5px;
+    padding-top: 10px;
+    /* border: 1px solid red; */
+  }
+  .guardian_info_content:last-child {
+    margin-bottom: 0;
+    /* border-bottom: none */
+  }
+  /* Label & Input */
+  .guardian_info_content label {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    margin: 0 0 0 10px;
+  }
+  .guardian_info_content input {
+    width: 97%;
+    text-align: center;
+    margin-top: 9px;
+    margin-left: 5px;
+  }
+
+  /* 약관동의 */
+  .signup_page_agreement_section {
+    width: 95%;
+    height: 90%;
+  }
+
+  /* Title */
+  .agreement_tit {
+    width: 95%;
+  }
+  .agreement_tit h1 {
+    color: var(--main-green);
+    margin-left: 10px;
+  }
+  .agreement_tit button {
+    margin-right: 10px;
+  }
+  .agreement_tit + hr {
+    width: 95%;
+  }
+
+  /* Contents */
+  .agreement_contents_wrap {
+    width: 95%;
+  }
+  .agreement_contents_item {
+  }
+
+  /* Check Box */
+  .agreement_contents_item input[type="checkbox"] {
+    opacity: 0;
+    width: 18px;
+    height: 18px;
+    z-index: 1;
+  }
+  .agreement_contents_item input[type="checkbox"]:checked + .fa-circle-check {
+    color: var(--main-green);
+  }
+
+  /* Label */
+  .agreement_contents_item label {
+    margin-left: 9px;
+    font-size: 14px;
+  }
+
+  /*  */
+  .agreement_contents_item .fa-circle-check {
+    z-index: -1;
+    font-size: 25px;
+    color: var(--dark-gray);
+  }
+  .agreement_contents_item a {
+    color: var(--black);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  .agreement_contents_item .fa-chevron-right {
+    font-size: 14px;
+  }
+
+  /* Bottom button */
+  .agreement_contents_btn {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .agreement_contents_btn button {
+    width: 95%;
+    height: 40px;
+    padding: 0;
+    font-size: 18px;
+  }
+}

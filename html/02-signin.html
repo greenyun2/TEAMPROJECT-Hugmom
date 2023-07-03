@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fontawesome-->
+    <script
+      defer
+      src="https://kit.fontawesome.com/4d91dbe517.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- header & foorer JS -->
+    <script defer src="/js/header.js"></script>
+    <script defer src="/js/02-signin.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="/img/hugmom_logo_1.png" type="image/x-icon" />
+    <title>로그인</title>
+  </head>
+  <body>
+    <div class="container signin_page">
+      <!-- Header -->
+      <header>
+        <div class="header_inner">
+          <!-- Logo -->
+          <div class="hugmom_logo">
+            <a href="/html/01-intro_logout.html">
+              <img src="/img/hugmom_logo_type_1.png" alt="" />
+            </a>
+          </div>
+
+          <!-- Mobile header Menu -->
+          <div class="mobile_heder_menu">
+            <div class="menu_toggle_btn">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="header_title_section">
+              <h1>Hugmom</h1>
+            </div>
+            <div class="cart_btn">
+              <a href="/html/02-signin.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart_count">3</span>
+              </a>
+            </div>
+          </div>
+          <!-- Header Navigaition Menu -->
+          <nav class="header_menu_list">
+            <div class="mobile_close_menu_btn">
+              <i class="fas fa-xmark"></i>
+            </div>
+            <ul>
+              <li class="header_menu shop">
+                <a href="#">SHOP</a>
+                <ul class="shop_malls">
+                  <li class="user_mall">
+                    <a href="/html/02-signin.html">산후조리원 회원 몰</a>
+                  </li>
+                  <li class="graduate_user_mall">
+                    <a href="/html/02-signin.html">산후조리원 졸업회원 </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header_menu live">
+                <a href="/html/02-signin.html">LIVE</a>
+              </li>
+              <li class="header_menu cs">
+                <a href="#">고객센터</a>
+                <ul class="cs_menu_list">
+                  <li><a href="/html/02-signin.html">자주하는 질문</a></li>
+                  <li><a href="/html/02-signin.html">공지사항</a></li>
+                </ul>
+              </li>
+              <!-- Mobile 전용 메뉴 추가 -->
+              <li class="header_menu mobile_myFage">
+                <a href="#">마이페이지</a>
+                <ul class="mobile_myFage_list">
+                  <li><a href="/html/02-signin.html">회원정보 확인</a></li>
+                  <li>
+                    <a href="/html/02-signin.html">회원정보 수정</a>
+                  </li>
+                  <li><a href="/html/02-signin.html">주문내역</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- Search Box -->
+            <div class="search_box">
+              <input type="text" />
+              <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <!-- Mobile Logo -->
+            <div class="mobile_menu_logo">
+              <a href="/html/01-intro.html"
+                ><img src="/img/hugmom_logo_2.png" alt=""
+              /></a>
+            </div>
+            <!-- Login & Join Btn -->
+            <div class="login_join_btns">
+              <ul>
+                <li><a href="/html/02-signin.html">로그인</a></li>
+                <li><a href="/html/03-signup.html">회원가입</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Signin Page Main -->
+      <main class="signin_page_main">
+        <!-- Sign page Logo -->
+        <div class="signin_page_login_logo">
+          <img src="/img/hugmom_logo_type_1.png" alt="" />
+        </div>
+        <!-- Signin Page login Form -->
+        <div class="signin_page_login_form">
+          <div class="login_id_line">
+            <input id="idInput" type="text" placeholder="아이디" />
+            <span class="login_id_user_icon">
+              <i class="fa-solid fa-user"></i>
+            </span>
+          </div>
+          <div class="login_pw_line">
+            <input id="pwInput" type="password" placeholder="비밀번호" />
+            <span class="login_pw_user_icon">
+              <i class="fa-solid fa-lock"></i>
+            </span>
+          </div>
+          <div class="login_checkbox_wrap">
+            <div class="keep_login_box">
+              <input type="checkbox" id="keep_login" />
+              <label for="keep_login">로그인 상태 유지</label>
+            </div>
+            <div class="save_id_box">
+              <input type="checkbox" id="save_id" />
+              <label for="save_id">아이디 저장</label>
+            </div>
+          </div>
+        </div>
+        <!-- Signin Page login Button -->
+        <div class="signin_page_login_btn_wrap">
+          <button class="signin_page_login_btn">로그인</button>
+        </div>
+        <!-- Signin Page login Find & Join -->
+        <div class="signin_page_login_find_join">
+          <div class="login_find_id_pw">
+            <div class="find_id">
+              <a href="/html/02-1-signin-findID.html">아이디 찾기</a>
+            </div>
+            <div class="find_id_pw_bar"></div>
+            <div class="find_pw">
+              <a href="/html/02-1-signin-findID.html">비밀번호 찾기</a>
+            </div>
+          </div>
+          <p class="login_join">
+            아직 회원이 아니신가요? <a href="/html/03-signup.html">회원가입</a>
+          </p>
+        </div>
+        <!-- Signin Page Login SNS Icon  -->
+        <div class="signin_page_login_sns_icon_wrap">
+          <p class="login_sns_tit">SNS 간편 로그인</p>
+          <div class="login_sns_icon_items">
+            <div class="login_sns_icon_item">
+              <a href="#"
+                ><img src="/img/login_sns_icon_item_img_1.png" alt="naver icon"
+              /></a>
+            </div>
+            <div class="login_sns_icon_item">
+              <a href="#"
+                ><img src="/img/login_sns_icon_item_img_2.png" alt="kakao icon"
+              /></a>
+            </div>
+            <div class="login_sns_icon_item">
+              <a href="#"
+                ><img src="/img/login_sns_icon_item_img_3.png" alt="kakao icon"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer>
+        <div class="footer">
+          <div class="footer_inner">
+            <div class="footer_left">
+              <h4><span>(주)</span>Hugmom</h4>
+              <div class="footer_info">
+                <p>서울특별시 종로구 관수동 수표로 96 2F 허그맘</p>
+                <p>
+                  상호 : 주식회사 허그맘 | 대표자 : 김대단 | 사업자등록번호
+                  126-12-34567
+                </p>
+                <p class="copyright">
+                  Copyright © Hugmom Corp. All Rights Reserved.
+                </p>
+              </div>
+            </div>
+            <div class="footer_right">
+              <div class="footer_cs">
+                <span>고객센터</span>
+                <p class="cs_tel">TEL. 1544-1234</p>
+                <p>평일 : 9:00 ~ 18:00 / 토, 일, 공휴일 휴무</p>
+                <p>(점심시간 12:00 ~ 13:00)</p>
+              </div>
+              <div class="footer_sns_btn">
+                <a href="#"><img src="/img/instagram.svg" alt="" /></a>
+                <a href="#"><img src="/img/facebook.svg" alt="" /></a>
+                <a href="#"><img src="/img/blog.svg" alt="" /></a>
+                <a href="#"><img src="/img/youtube.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

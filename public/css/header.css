@@ -1,0 +1,590 @@
+.header_inner {
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Logo */
+.hugmom_logo {
+  width: 220px;
+}
+.hugmom_logo a {
+  width: 100%;
+}
+.hugmom_logo a img {
+  display: inline-block;
+  width: inherit;
+  margin: auto 0;
+  object-fit: cover;
+}
+.mobile_heder_menu {
+  display: none;
+}
+/* ===== Header Menu List ===== */
+.mobile_close_menu_btn {
+  display: none;
+}
+.header_menu_list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_menu_list > ul {
+  width: 600px;
+  margin-left: 50px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 31px;
+}
+.header_menu_list > ul > .header_menu > a {
+  color: var(--black);
+  font-family: var(--eng);
+  font-weight: bold;
+  font-size: 20px;
+  font-size: 1.25rem;
+  transition: 0.2s;
+}
+.header_menu_list .header_menu.cs > a {
+  display: block;
+  font-family: var(--kor);
+  font-size: 19px; /*영문폰트와 맞추기위해 조정함*/
+  font-size: 1.1875rem;
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+.header_menu_list ul li:hover > a {
+  color: var(--main-green);
+}
+.header_menu_list ul li:hover > a > span {
+  color: var(--main-green);
+}
+
+/* Header Menu List > Shop > Shop 하위 메뉴 */
+.header_menu.shop {
+  position: relative;
+}
+.header_menu.shop .shop_malls {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  width: 220px;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.header_menu.shop .shop_malls li {
+  text-align: center;
+  padding: 5px;
+  transition: 0.3s;
+}
+.header_menu.shop .shop_malls li:hover {
+  background-color: var(--main-green);
+}
+.header_menu.shop .shop_malls li:hover > a {
+  color: var(--white);
+}
+.header_menu.shop .shop_malls li a {
+  display: block;
+  padding: 5px;
+  width: 100%;
+  font-family: var(--kor);
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--black);
+}
+.header_menu.shop:hover .shop_malls {
+  display: block;
+}
+
+/* Header Menu List > CS > CS 하위 메뉴*/
+.header_menu.cs {
+  position: relative;
+}
+.header_menu.cs .cs_menu_list {
+  display: none;
+  position: absolute;
+  background-color: var(--white);
+
+  width: 220px;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.header_menu.cs .cs_menu_list li {
+  text-align: center;
+  padding: 5px;
+  transition: 0.3s;
+}
+.header_menu.cs .cs_menu_list li > a {
+  display: block;
+  padding: 5px;
+  font-family: var(--kor);
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--black);
+}
+.header_menu.cs .cs_menu_list li:hover {
+  background-color: var(--main-green);
+}
+.header_menu.cs .cs_menu_list li:hover > a {
+  color: var(--white);
+}
+.header_menu.cs:hover .cs_menu_list {
+  display: block;
+  z-index: 999;
+}
+
+/* 모바일버전 메뉴 설정 */
+/* Header Menu List > mobile Mufage > 하위 메뉴*/
+.header_menu.mobile_myFage {
+  position: relative;
+}
+.mobile_myFage_list {
+  display: none;
+  position: absolute;
+  background-color: var(--white);
+
+  width: 220px;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.mobile_myFage_list li {
+  text-align: center;
+  padding: 5px;
+  transition: 0.3s;
+}
+.mobile_myFage_list li > a {
+  display: block;
+  padding: 5px;
+  font-family: var(--kor);
+  font-size: 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--black);
+}
+.mobile_myFage_list li:hover {
+  background-color: var(--main-green);
+}
+.header_menu.mobile_myFage .mobile_myFage_list li:hover > a {
+  color: var(--white);
+}
+.header_menu.mobile_myFage:hover .mobile_myFage_list {
+  display: block;
+  z-index: 999;
+}
+
+/* Search Box */
+.search_box {
+  border-bottom: 1px solid var(--main-green);
+  padding: 7px;
+}
+.search_box input {
+  outline: none;
+  border: none;
+}
+.search_box input:focus {
+  outline: none;
+}
+.search_box button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-size: 1rem;
+}
+/* Login-Join */
+.login_join_btns ul {
+  display: flex;
+  gap: 25px;
+}
+.login_join_btns ul li a {
+  color: var(--black);
+  font-family: var(--kor);
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+/* 로그인 후 헤더 변경 */
+.user_info .user_name {
+  font-size: 16px;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 3px;
+}
+.user_info .user_name span {
+  font-family: var(--kor);
+}
+.user_info .user_name .logout_btn {
+  display: none;
+}
+.user_info .user_name .logout_btn {
+  text-decoration: underline;
+  font-family: var(--kor);
+  font-size: 12px;
+  color: var(--dark-gray);
+}
+.user_info .user_name .logout_btn:hover {
+  color: var(--main-green);
+}
+.user_info .user_name i {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 14px;
+  transition: 0.5s;
+}
+.user_info .user_name:hover i {
+  transform: rotate(180deg);
+}
+.user_info .user_info_menu {
+  width: 130px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px 3px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
+  font-family: var(--kor);
+  font-size: 14px;
+  color: var(--black);
+
+  position: absolute;
+  top: 100%;
+  display: none;
+}
+.user_info .user_info_menu li {
+  padding: 6px;
+  border-bottom: 1px solid var(--light-gray);
+}
+.user_info .user_info_menu li a {
+  font-family: var(--kor);
+  font-size: 14px;
+  color: var(--black);
+}
+.user_info .user_info_menu li:last-child {
+  border: none;
+}
+
+.user_info .user_name:hover .user_info_menu {
+  display: block;
+  /* z-index: 999; */
+}
+.user_info .user_info_menu li:hover > a {
+  color: var(--main-green);
+}
+/* 장바구니 갯수 */
+.cart_count {
+  display: inline-block;
+  background-color: var(--red);
+  color: var(--white);
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  text-align: center;
+}
+/* 모바일 버전 장바구니 갯수 */
+.cart_btn .cart_count {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 14px;
+  top: -8px;
+  font-size: 13px;
+}
+
+/* 모바일 버전 메뉴 -  데스크탑 버전에서는 안나타남 */
+.user_name_mobile {
+  display: none;
+}
+.header_menu.mobile_myFage {
+  display: none;
+}
+.mobile_menu_logo {
+  display: none;
+}
+
+@media all and (max-width: 768px) {
+  .header_inner {
+    width: 100vw;
+    padding: 0 30px;
+    position: relative;
+  }
+  .hugmom_logo {
+    display: none;
+  }
+
+  /* 상단 헤더 메뉴 */
+  .mobile_heder_menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .mobile_heder_menu > div {
+    cursor: pointer;
+  }
+  .menu_toggle_btn {
+    font-size: 20px;
+    color: var(--black);
+  }
+  .cart_btn {
+    position: relative;
+    font-size: 18px;
+    color: var(--black);
+  }
+  .header_title_section > h1 {
+    font-size: 24px;
+    font-family: var(--eng);
+    font-weight: bold;
+    color: var(--main-green);
+  }
+
+  /* 토글버튼 클릭시 나오는 메뉴 */
+  .header_menu_list {
+    width: 255px;
+    height: 100px;
+    max-height: 500px;
+    position: absolute;
+    left: -300px;
+    top: 60px;
+    padding-top: 10px;
+    background-color: var(--white);
+
+    transition: all 0.5s;
+  }
+  /* 토글버튼 클릭시 오픈 */
+  .header_menu_list.menuopen {
+    left: 0;
+  }
+  /* 닫기버튼 */
+  .mobile_close_menu_btn {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: var(--white);
+    border: 1px solid var(--main-green);
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    border-left: none;
+    top: 16px;
+    right: -30px;
+    font-size: 24px;
+  }
+  .mobile_close_menu_btn > i {
+    color: var(--main-green);
+  }
+  /* 상단 로고 - 홈페이지로 이동*/
+  .mobile_menu_logo {
+    display: inline-block;
+    position: absolute;
+    width: 50px;
+    height: 45px;
+    top: 10px;
+    left: 20px;
+  }
+  .mobile_menu_logo img {
+    width: 100%;
+    height: 100%;
+  }
+  /* 각 메뉴 탭 */
+  .header_menu_list > ul {
+    background-color: var(--white);
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    gap: 0;
+    margin-left: 0;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+  }
+  .header_menu_list > ul > li {
+    width: 100%;
+    max-height: 200px;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--gray);
+  }
+  .header_menu_list > ul > li:nth-child(1),
+  .header_menu_list > ul > li:nth-child(3),
+  .header_menu_list > ul > li:nth-child(4) {
+    padding: 15px 0 0;
+  }
+  .header_menu_list > ul > li > a {
+    display: inline-block;
+    width: 90%;
+    margin-left: 20px;
+  }
+  /* 각 메뉴 오른쪽 쉐브론 아이콘 */
+  .header_menu > a::after {
+    content: "\f078";
+    font-family: fontawesome;
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+
+    /* transition: all 0.5s; */
+  }
+  .header_menu:hover > a::after {
+    transform: rotate(-90deg);
+  }
+  .header_menu.shop:hover > a::after,
+  .header_menu.cs:hover > a::after,
+  .header_menu.mobile_myFage:hover > a::after {
+    transform: rotate(-180deg);
+  }
+
+  .header_menu_list > ul > .header_menu > a {
+    font-size: 16px;
+    font-family: var(--kor);
+  }
+  .header_menu.cs > a {
+    font-size: 16px;
+  }
+
+  /* shop 하위메뉴 */
+  .header_menu.shop .shop_malls {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 0;
+    margin-top: 15px;
+    border-radius: 0;
+    background-color: var(--light-gray);
+    box-shadow: none;
+    transition: all 0.5s;
+  }
+  .header_menu.shop .shop_malls li {
+    text-align: left;
+    width: 100%;
+    border-radius: 0;
+    border-bottom: 1px dotted var(--gray);
+  }
+  .header_menu.shop .shop_malls li:first-child {
+    border-top: 1px solid var(--gray);
+  }
+  .header_menu.shop .shop_malls li a {
+    padding-left: 30px;
+    font-size: 14px;
+  }
+  /* .header_menu.shop:hover .shop_malls {
+    height: 74px;
+  } */
+  /* .shop_malls.openList {
+    height: 74px;
+  } */
+
+  /* 고객센터 하위메뉴 */
+  .header_menu_list .header_menu.cs > a {
+    font-size: 16px;
+  }
+  .header_menu.cs .cs_menu_list {
+    display: block;
+    position: relative;
+    height: 0;
+    margin-top: 15px;
+    background-color: var(--light-gray);
+
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    transition: all 0.5s;
+  }
+  .header_menu.cs .cs_menu_list li {
+    text-align: left;
+    width: 100%;
+    border-radius: 0;
+    border-bottom: 1px dotted var(--gray);
+  }
+  .header_menu.cs .cs_menu_list li:first-child {
+    border-top: 1px solid var(--gray);
+  }
+  .header_menu.cs .cs_menu_list li a {
+    padding-left: 30px;
+    font-size: 14px;
+  }
+  /* .header_menu.cs:hover .cs_menu_list {
+    height: 74px;
+  } */
+  /* .header_menu.cs.openList .cs_menu_list {
+    height: 74px;
+  } */
+
+  /* 마이페이지 메뉴 */
+  .header_menu.mobile_myFage {
+    display: block;
+  }
+  /* 마이페이지 하위메뉴 */
+  .mobile_myFage_list {
+    display: block;
+    position: relative;
+    height: 0;
+    margin-top: 15px;
+    background-color: var(--light-gray);
+
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    transition: all 0.5s;
+  }
+  .mobile_myFage_list li {
+    text-align: left;
+    width: 100%;
+    border-radius: 0;
+    border-bottom: 1px dotted var(--gray);
+  }
+  .mobile_myFage_list li:first-child {
+    border-top: 1px solid var(--gray);
+  }
+  /* .mobile_myFage_list li:last-child {
+    border-bottom: none;
+  } */
+  .mobile_myFage_list li a {
+    padding-left: 30px;
+    font-size: 14px;
+  }
+  /* .header_menu.mobile_myFage:hover .mobile_myFage_list {
+    height: 112px;
+  } */
+  /* .header_menu.mobile_myFage.openList .mobile_myFage_list {
+    height: 112px;
+  } */
+
+  /* 검색창 none */
+  .search_box {
+    display: none;
+  }
+  .login_join_btns {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+
+  /* 로그인 & 회원가입 */
+  .login_join_btns ul {
+    gap: 10px;
+  }
+  .login_join_btns ul li a {
+    font-size: 14px;
+  }
+
+  /* 로그인시 나오는 메뉴 */
+  .user_info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .user_info .user_name i {
+    display: none;
+  }
+  .user_info .user_name:hover .user_info_menu {
+    display: none;
+  }
+  .user_info .user_name .logout_btn {
+    display: inline-block;
+  }
+}

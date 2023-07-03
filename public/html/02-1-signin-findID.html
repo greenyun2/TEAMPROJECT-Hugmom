@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome Icon js -->
+    <script
+      src="https://kit.fontawesome.com/15944cb74b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- favicon -->
+    <link rel="icon" href="/img/hugmom_logo_1.png" type="image/x-icon" />
+    <!-- Custom CSS & JS -->
+    <script defer src="/js/02-1-siginin-findID.js"></script>
+    <script defer src="/js/header.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="/img/hugmom_logo_1.png" type="image/x-icon" />
+    <title>아이디/비밀번호 찾기</title>
+  </head>
+  <body>
+    <div class="container signin_findId">
+      <!-- Header -->
+      <header>
+        <div class="header_inner">
+          <!-- Logo -->
+          <div class="hugmom_logo">
+            <a href="/html/01-intro_logout.html">
+              <img src="/img/hugmom_logo_type_1.png" alt="" />
+            </a>
+          </div>
+
+          <!-- Mobile header Menu -->
+          <div class="mobile_heder_menu">
+            <div class="menu_toggle_btn">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="header_title_section">
+              <h1>Hugmom</h1>
+            </div>
+            <div class="cart_btn">
+              <a href="/html/02-signin.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart_count">3</span>
+              </a>
+            </div>
+          </div>
+          <!-- Header Navigaition Menu -->
+          <nav class="header_menu_list">
+            <div class="mobile_close_menu_btn">
+              <i class="fas fa-xmark"></i>
+            </div>
+            <ul>
+              <li class="header_menu shop">
+                <a href="#">SHOP</a>
+                <ul class="shop_malls">
+                  <li class="user_mall">
+                    <a href="/html/02-signin.html">산후조리원 회원 몰</a>
+                  </li>
+                  <li class="graduate_user_mall">
+                    <a href="/html/02-signin.html">산후조리원 졸업회원 </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="header_menu live">
+                <a href="/html/02-signin.html">LIVE</a>
+              </li>
+              <li class="header_menu cs">
+                <a href="#">고객센터</a>
+                <ul class="cs_menu_list">
+                  <li><a href="/html/02-signin.html">자주하는 질문</a></li>
+                  <li><a href="/html/02-signin.html">공지사항</a></li>
+                </ul>
+              </li>
+              <!-- Mobile 전용 메뉴 추가 -->
+              <li class="header_menu mobile_myFage">
+                <a href="#">마이페이지</a>
+                <ul class="mobile_myFage_list">
+                  <li><a href="/html/02-signin.html">회원정보 확인</a></li>
+                  <li>
+                    <a href="/html/02-signin.html">회원정보 수정</a>
+                  </li>
+                  <li><a href="/html/02-signin.html">주문내역</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- Search Box -->
+            <div class="search_box">
+              <input type="text" />
+              <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <!-- Mobile Logo -->
+            <div class="mobile_menu_logo">
+              <a href="/html/01-intro.html"
+                ><img src="/img/hugmom_logo_2.png" alt=""
+              /></a>
+            </div>
+            <!-- Login & Join Btn -->
+            <div class="login_join_btns">
+              <ul>
+                <li><a href="/html/02-signin.html">로그인</a></li>
+                <li><a href="/html/03-signup.html">회원가입</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Header -->
+
+      <!-- signin_find Main -->
+      <main class="signin_findId_main">
+        <!-- signin find logo -->
+        <div class="singin_find_logo">
+          <img src="/img/hugmom_logo_type_1.png" alt="허그맘로고" />
+        </div>
+
+        <div class="signin_find_title">
+          <h1>아이디 / 비밀번호 찾기</h1>
+        </div>
+
+        <div class="signin_find_form">
+          <!-- signin find tap menu -->
+          <div class="signin_find_tapMenu">
+            <input
+              class="signin_find_radio"
+              type="radio"
+              id="for_phone"
+              name="findbtn"
+              checked
+            />
+            <input
+              class="signin_find_radio"
+              type="radio"
+              id="for_email"
+              name="findbtn"
+            />
+            <nav class="find_buttons">
+              <label class="tap_phone" for="for_phone">휴대폰 인증</label>
+              <label class="tap_email" for="for_email">이메일 인증</label>
+            </nav>
+            <div class="tap for_phone">
+              <ul>
+                <li class="name_box">
+                  <input
+                    class="signin_find_name"
+                    type="text"
+                    placeholder="이름을 입력해주세요"
+                  />
+                  <span class="error_m_1"
+                    >가입 시 등록한 이름을 입력해주세요</span
+                  >
+                </li>
+                <li class="email_box">
+                  <input
+                    class="signin_find_phone"
+                    type="text"
+                    placeholder="'-'를 제외한 핸드폰 번호를 입력해 주세요"
+                  />
+                  <span class="error_m_2"
+                    >가입 시 등록한 핸드폰 번호를 입력해 주세요</span
+                  >
+                </li>
+              </ul>
+              <button class="find_get_token">인증번호 받기</button>
+            </div>
+            <div class="tap for_email">
+              <ul>
+                <li class="name_box">
+                  <input
+                    class="signin_find_name"
+                    type="text"
+                    placeholder="이름을 입력해주세요"
+                  />
+                  <span class="error_m_3"
+                    >가입 시 등록한 이름을 입력해주세요</span
+                  >
+                </li>
+                <li class="email_box">
+                  <input
+                    class="signin_find_email"
+                    type="text"
+                    placeholder="이메일을 입력해주세요"
+                  />
+                  <span class="error_m_4"
+                    >가입 시 등록한 이메일을 입력해 주세요</span
+                  >
+                </li>
+              </ul>
+              <button class="find_get_email">인증메일 받기</button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer">
+          <div class="footer_inner">
+            <div class="footer_left">
+              <h4><span>(주)</span>Hugmom</h4>
+              <div class="footer_info">
+                <p>서울특별시 종로구 관수동 수표로 96 2F 허그맘</p>
+                <p>
+                  상호 : 주식회사 허그맘 | 대표자 : 김대단 | 사업자등록번호
+                  126-12-34567
+                </p>
+                <p class="copyright">
+                  Copyright © Hugmom Corp. All Rights Reserved.
+                </p>
+              </div>
+            </div>
+            <div class="footer_right">
+              <div class="footer_cs">
+                <span>고객센터</span>
+                <p class="cs_tel">TEL. 1544-1234</p>
+                <p>평일 : 9:00 ~ 18:00 / 토, 일, 공휴일 휴무</p>
+                <p>(점심시간 12:00 ~ 13:00)</p>
+              </div>
+              <div class="footer_sns_btn">
+                <a href="#"><img src="/img/instagram.svg" alt="" /></a>
+                <a href="#"><img src="/img/facebook.svg" alt="" /></a>
+                <a href="#"><img src="/img/blog.svg" alt="" /></a>
+                <a href="#"><img src="/img/youtube.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

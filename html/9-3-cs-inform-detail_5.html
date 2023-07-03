@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome Icon js -->
+    <script
+      src="https://kit.fontawesome.com/15944cb74b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- Custom CSS & JS -->
+    <script defer src="/js/header.js"></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="/img/hugmom_logo_1.png" type="image/x-icon" />
+    <title>[서비스 안내] 허그맘 서비스 메인 개편</title>
+  </head>
+  <body>
+    <div class="container cs-FAQ">
+      <!-- Main Header -->
+      <header>
+        <div class="header_inner">
+          <!-- Logo -->
+          <div class="hugmom_logo">
+            <a href="/html/01-intro.html">
+              <img src="/img/hugmom_logo_type_1.png" alt="" />
+            </a>
+          </div>
+
+          <!-- Mobile header Menu -->
+          <div class="mobile_heder_menu">
+            <div class="menu_toggle_btn">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="header_title_section">
+              <h1>Hugmom</h1>
+            </div>
+            <div class="cart_btn">
+              <a href="/html/08-4-mypage-cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart_count">3</span>
+              </a>
+            </div>
+          </div>
+          <!-- Header Navigaition Menu -->
+          <nav class="header_menu_list">
+            <div class="mobile_close_menu_btn">
+              <i class="fas fa-xmark"></i>
+            </div>
+            <ul>
+              <li class="header_menu shop">
+                <a href="#">SHOP</a>
+                <ul class="shop_malls">
+                  <li class="user_mall">
+                    <a href="/html/04-usermall.html">산후조리원 회원 몰</a>
+                  </li>
+                  <li class="graduate_user_mall">
+                    <a href="/html/05-graduate-usermall.html"
+                      >산후조리원 졸업회원 몰</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="header_menu live">
+                <a href="/html/07-live.html">LIVE</a>
+              </li>
+              <li class="header_menu cs">
+                <a href="#">고객센터</a>
+                <ul class="cs_menu_list">
+                  <li><a href="/html/9-1-cs-FAQ.html">자주하는 질문</a></li>
+                  <li><a href="/html/9-2-cs-inform.html">공지사항</a></li>
+                </ul>
+              </li>
+              <!-- Mobile 전용 메뉴 추가 -->
+              <li class="header_menu mobile_myFage">
+                <a href="#">마이페이지</a>
+                <ul class="mobile_myFage_list">
+                  <li><a href="/html/08-1-mypage.html">회원정보 확인</a></li>
+                  <li>
+                    <a href="/html/08-2-mypage-edit(1).html">회원정보 수정</a>
+                  </li>
+                  <li><a href="/html/08-3-mypage-order.html">주문내역</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- Search Box -->
+            <div class="search_box">
+              <input type="text" />
+              <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <!-- Mobile Logo -->
+            <div class="mobile_menu_logo">
+              <a href="/html/01-intro.html"
+                ><img src="/img/hugmom_logo_2.png" alt=""
+              /></a>
+            </div>
+            <!-- user info -->
+            <div class="user_info">
+              <div class="user_name">
+                <a href="/html/08-1-mypage.html"><span>홍길동님</span></a>
+                <a class="logout_btn" href="/html/01-intro_logout.html"
+                  >로그아웃</a
+                >
+                <i class="fas fa-chevron-down"></i>
+                <ul class="user_info_menu">
+                  <li>
+                    <a href="/html/08-4-mypage-cart.html">장바구니</a>
+                    <span class="cart_count" data-cart-count="0">3</span>
+                  </li>
+                  <li><a href="/html/08-1-mypage.html">마이페이지</a></li>
+                  <li><a href="/html/01-intro_logout.html">로그아웃</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Main Header -->
+      <main>
+        <nav class="cs_nav">
+          <div class="cs_nav_wrap">
+            <span class="cs_nav_first">고객센터</span>
+            <i class="bi bi-chevron-right"></i>
+            <span>공지사항</span>
+          </div>
+        </nav>
+        <div class="cs_contents">
+          <!-- Left Content -->
+          <aside>
+            <h2>고객센터</h2>
+            <ul class="cs_FAQ_menu">
+              <li>
+                <a href="/html/9-1-cs-FAQ.html">자주하는 질문</a>
+              </li>
+              <li>
+                <a class="cs_FAQ_menu_select" href="/html/9-2-cs-inform.html"
+                  >공지사항 <i class="bi bi-chevron-right"></i
+                ></a>
+              </li>
+            </ul>
+          </aside>
+          <!-- Right Content -->
+          <section class="cs_FAQ_inner">
+            <!-- 공지사항 박스 -->
+            <article class="cs_notice cs_article">
+              <div class="cs_notice_tit">
+                <h2 class="cs_title">공지사항</h2>
+              </div>
+              <div class="notice_detail_contents">
+                <div class="notice_detail_tit">
+                  <h2>[서비스 안내] 허그맘 서비스 메인 개편</h2>
+                  <p>2022.09.01</p>
+                  <span>중요</span>
+                </div>
+                <div class="notice_detail_content">
+                  <div class="notice_detail_img">
+                    <img src="/img/9-3-cs-inform-detail_5_img_1.jpg" alt="" />
+                  </div>
+                  <p>안녕하세요. 허그맘입니다.</p>
+                  <p>
+                    펀딩으로 발견하는 일상의 즐거움을 더 쉽게, 더 많이 할 수
+                    있도록 허그맘 서비스가 개편되었습니다!<br />
+                    2022년 8월 30일 IOS APP을 시작으로 AOS APP과 MOBILE WEB까지
+                    순차적으로 개편될 예정인<br />
+                    서비스 메인 개편은 사용자의 탐색 경험 강화를 목표로 아래와
+                    같이 크게 4가지가 달라졌어요.
+                  </p>
+                  <p></p>
+                  <p></p>
+                  <h3>GNB 구조가 탐색 경험 중심으로 변경되었어요!</h3>
+                  <div class="notice_detail_img">
+                    <img src="/img/9-3-cs-inform-detail_5_img_2-1.jpg" alt="" />
+                  </div>
+                  <div class="notice_detail_img">
+                    <img src="/img/9-3-cs-inform-detail_5_img_2-2.jpg" alt="" />
+                  </div>
+                  <p>
+                    서비스 도메인 중심으로 구성되어 있던 기존 GNB(*Global
+                    Navigation Bar) 구조가 유저 행동 중심으로 변경되었습니다.
+                    [홈-펀딩예정-펀딩-스토어-<br />더보기]와 같이 구성되어 있던
+                    GNB가 [홈-피드-만들기-찜하기-마이허그맘]로 변경되어 일상의
+                    새로움을 만들어가는 메이커와 서포터의 이야기를 더 쉽게<br />
+                    만나볼 수 있어요!
+                  </p>
+                  <p></p>
+                  <h3>리뉴얼된 홈에서 새로운 탐색 경험을 제공합니다!</h3>
+                  <div class="notice_detail_img">
+                    <img src="/img/9-3-cs-inform-detail_5_img_3.jpg" alt="" />
+                  </div>
+                  <p>
+                    프로젝트 추천, 실시간랭킹 등 큐레이팅 메뉴 중심으로 구성되어
+                    있던 홈 화면이 유저 유형별 탐색 경험 강화를 위해
+                    변경되었어요. 검색, 퀵메뉴, 알림을 통해<br />
+                    방문하고자 하는 페이지와 프로젝트가 명확한 유저는 더 쉽고
+                    빠르게 해당 화면으로 이동할 수 있게 되었고, 둘러보기를 통해
+                    새로운 프로젝트 탐색을 즐기는<br />
+                    유저는 개인화된 추천 프로젝트 탐색을 통해 발견의 재미를
+                    느끼실 수 있습니다.
+                  </p>
+                  <p></p>
+                  <h3>
+                    피드에서 나와 취향이 비슷한 친구를 팔로우 할 수 있어요!
+                  </h3>
+                  <div class="notice_detail_img">
+                    <img src="/img/9-3-cs-inform-detail_5_img_4.jpg" alt="" />
+                  </div>
+                  <p>
+                    피드에서는 새롭게 추가된 카카오 친구 추천을 통해<br />
+                    나와 취향이 비슷한 친구를 만날 수 있어요! 카카오 계정으로
+                    허그맘에 로그인하면, 펀딩과 구매를 통해 친구들이 즐기고 있는
+                    허그맘 펀딩 라이프를 확인할 수 있어요. 내 친구의 허그맘 펀딩
+                    라이프를 둘러보고, 나와 취향이 비슷한 친구를 팔로우하고
+                    프로젝트를<br />
+                    공유해보세요.
+                  </p>
+                  <p></p>
+                  <h3>
+                    몇 번의 클릭만으로, 누구나 쉽게 펀딩을 오픈할 수 있어요!
+                  </h3>
+                  <div class="notice_detail_img">
+                    <img src="/img/9-3-cs-inform-detail_5_img_5.jpg" alt="" />
+                  </div>
+                  <p>
+                    허그맘를 통해 처음으로 소개하고 싶은 제품과 서비스가 있는
+                    유저라면, 사업자가 아니어도 몇 번의 클릭만으로 쉽게 펀딩을
+                    만들 수 있어요. 제품과 서비스가<br />
+                    아니어도 좋아요! 언젠가는 해봐야지라는 마음으로 간직해 온
+                    오랜 꿈, 안타까운 마음으로 바라보기만 했던 이웃, 동물,
+                    환경에 대한 고민이 있으신<br />
+                    분들이라면 후원 펀딩에 도전해 보세요. 진정성이 담긴 스토리로
+                    후원 펀딩을 열고, 같은 마음과 생각을 갖고 지지해주는
+                    서포터들을 만날 수 있어요! 펀딩에<br />
+                    도전하는 메이커님들을 위해 수수료도 일부 인하되어 운영
+                    중이니, 그동안 미뤄왔던 꿈을 허그맘와 함께 현실로 만들어
+                    보세요.
+                  </p>
+                  <p></p>
+                  <h3>마음에 드는 프로젝트는 먼저 찜해보세요!</h3>
+                  <div class="notice_detail_img">
+                    <img src="/img/9-3-cs-inform-detail_5_img_6.jpg" alt="" />
+                  </div>
+                  <p>
+                    세상에 첫발을 내딛는 펀딩 아이템들! 마음에 드는 프로젝트는
+                    먼저 찜해보세요. 찜한 프로젝트는 찜하기 페이지에서 언제든지
+                    쉽게 둘러볼 수 있어요.<br />
+                    프로젝트가 종료되기 전 놓치지 않게 안내도 해드릴게요! 스토어
+                    찜하기 기능도 준비 중이에요. 찜한 펀딩부터 스토어
+                    프로젝트까지 한번에 관리하는 것은<br />
+                    물론 유용한 정보 제공까지 지속적으로 업데이트 해나갈
+                    예정이니 기대해주세요!
+                  </p>
+                  <p></p>
+                  <p></p>
+                  <p>
+                    서비스 메인 개편을 시작으로 펀딩으로 발견하는 일상의
+                    즐거움을<br />
+                    드리기 위해 계속해서 노력하는 허그맘가 되겠습니다.
+                  </p>
+                  <p>
+                    감사합니다.<br />
+                    허그맘 드림
+                  </p>
+                  <div class="notice_detail_prev_btn">
+                    <a href="9-2-cs-inform.html">목록으로 돌아가기</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer>
+        <footer>
+          <div class="footer">
+            <div class="footer_inner">
+              <div class="footer_left">
+                <h4><span>(주)</span>Hugmom</h4>
+                <div class="footer_info">
+                  <p>서울특별시 종로구 관수동 수표로 96 2F 허그맘</p>
+                  <p>
+                    상호 : 주식회사 허그맘 | 대표자 : 김대단 | 사업자등록번호
+                    126-12-34567
+                  </p>
+                  <p class="copyright">
+                    Copyright © Hugmom Corp. All Rights Reserved.
+                  </p>
+                </div>
+              </div>
+              <div class="footer_right">
+                <div class="footer_cs">
+                  <span>고객센터</span>
+                  <p class="cs_tel">TEL. 1544-1234</p>
+                  <p>평일 : 9:00 ~ 18:00 / 토, 일, 공휴일 휴무</p>
+                  <p>(점심시간 12:00 ~ 13:00)</p>
+                </div>
+                <div class="footer_sns_btn">
+                  <a href="#"><img src="/img/instagram.svg" alt="" /></a>
+                  <a href="#"><img src="/img/facebook.svg" alt="" /></a>
+                  <a href="#"><img src="/img/blog.svg" alt="" /></a>
+                  <a href="#"><img src="/img/youtube.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </footer>
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

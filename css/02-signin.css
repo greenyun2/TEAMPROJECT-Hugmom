@@ -1,0 +1,340 @@
+/* Container */
+.container.signin_page {
+  width: 100vw;
+  height: 100vh;
+  font-family: var(--kor);
+}
+
+/* ### Signin Page Main ### */
+.signin_page_main {
+  width: 1280px;
+  height: 1070px;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 auto;
+}
+/* Logo */
+.signin_page_login_logo {
+  width: 100%;
+  height: 380px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Login Form */
+.signin_page_login_form {
+  width: 100%;
+  height: 235px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Login ID Line */
+.login_id_line {
+  width: 414px;
+  height: 75px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  position: relative;
+
+  border: 1px solid var(--main-green);
+  border-radius: 5px;
+
+  margin-bottom: 20px;
+}
+.login_id_line input[type="text"] {
+  width: 100%;
+
+  padding-left: 50px;
+
+  outline: 0;
+  border: none;
+
+  font-size: 16px;
+  color: var(--dark-gray);
+  font-family: var(--kor);
+}
+
+.login_id_line input[type="text"]:focus {
+  color: var(--black);
+}
+.login_id_line input[type="text"]:focus + .login_id_user_icon i {
+  color: var(--black);
+}
+.login_id_user_icon {
+  position: absolute;
+  left: 20px;
+  top: 23px;
+}
+.login_id_user_icon i {
+  font-size: 16px;
+  color: var(--dark-gray);
+  margin-top: 5px;
+}
+
+/* Login PW Line */
+.login_pw_line {
+  width: 414px;
+  height: 75px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  position: relative;
+
+  border: 1px solid var(--main-green);
+  border-radius: 5px;
+}
+.login_pw_line input[type="password"] {
+  width: 100%;
+
+  padding-left: 50px;
+
+  outline: 0;
+  border: none;
+
+  font-size: 16px;
+  color: var(--dark-gray);
+  font-family: var(--kor);
+}
+.login_pw_line input[type="password"]:focus {
+  color: var(--black);
+}
+.login_pw_line input[type="password"]:focus + .login_pw_user_icon i {
+  color: var(--black);
+}
+.login_pw_user_icon {
+  position: absolute;
+  left: 20px;
+  top: 23px;
+}
+.login_pw_user_icon i {
+  font-size: 16px;
+  color: var(--dark-gray);
+  margin-top: 4px;
+}
+
+/* Login Checkbox Wrap*/
+.login_checkbox_wrap {
+  width: 434px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 15px;
+}
+/* Login Checkbox Wrap > Keep Login */
+.keep_login_box {
+  position: relative;
+  cursor: pointer;
+}
+.keep_login_box input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+
+  position: absolute;
+  top: 5px;
+  left: 11px;
+
+  opacity: 0;
+  cursor: pointer;
+  font-family: var(--kor);
+}
+.keep_login_box label {
+  padding-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--kor);
+}
+.keep_login_box label::before {
+  content: "\f058";
+  font-family: fontawesome;
+  width: 22px;
+  height: 22px;
+  color: var(--gray);
+  margin-right: 5px;
+  cursor: pointer;
+}
+.keep_login_box input[type="checkbox"]:checked + label::before {
+  color: var(--main-green);
+}
+
+/* Login Checkbox Wrap > Save Id */
+.save_id_box {
+  position: relative;
+  margin-right: 10px;
+
+  cursor: pointer;
+}
+.save_id_box input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+
+  position: absolute;
+  top: 5px;
+  left: 11px;
+
+  opacity: 0;
+  cursor: pointer;
+  font-family: var(--kor);
+}
+.save_id_box label {
+  padding-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--kor);
+}
+.save_id_box label::before {
+  content: "\f058";
+  font-family: fontawesome;
+  width: 22px;
+  height: 22px;
+  color: var(--gray);
+  margin-right: 5px;
+  cursor: pointer;
+}
+.save_id_box input[type="checkbox"]:checked + label::before {
+  color: var(--main-green);
+}
+/* login Button Wrap */
+.signin_page_login_btn_wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 66px;
+}
+/* Login Button */
+.signin_page_login_btn {
+  width: 415px;
+  height: 65px;
+  background-color: var(--main-green);
+  color: var(--white);
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--kor);
+}
+/* Find Id  */
+.signin_page_login_find_join {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* Find Pw */
+.login_find_id_pw {
+  margin-top: 15px;
+  margin-bottom: 66px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+/* Find Id */
+.login_find_id_pw .find_id {
+  font-size: 16px;
+
+  display: flex;
+  justify-content: flex-end;
+}
+.login_find_id_pw .find_id a {
+  color: var(--dark-gray);
+  font-family: var(--kor);
+}
+/* Find Pw */
+.login_find_id_pw .find_pw {
+  display: flex;
+  justify-content: flex-start;
+
+  font-size: 16px;
+}
+.login_find_id_pw .find_pw a {
+  color: var(--dark-gray);
+  font-family: var(--kor);
+}
+.find_id_pw_bar {
+  width: 2px;
+  height: 100%;
+
+  margin: 0 auto;
+
+  background-color: var(--gray);
+}
+
+/* Sign Up Box */
+.login_join {
+  color: var(--black);
+  font-size: 16px;
+  font-family: var(--kor);
+}
+.login_join a {
+  color: var(--black);
+  margin-left: 16px;
+  font-family: var(--kor);
+}
+
+/* SNS Icon Wrap */
+.signin_page_login_sns_icon_wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 43px;
+  margin-bottom: 50px;
+}
+.login_sns_tit {
+  font-size: 16px;
+  margin-bottom: 24px;
+  font-family: var(--kor);
+  color: var(--black);
+}
+.login_sns_icon_items {
+  width: 350px;
+  display: flex;
+  justify-content: space-around;
+}
+.login_sns_icon_item {
+  border: 1px solid var(--main-green);
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+@media all and (max-width: 768px) {
+  .container.signin_page {
+    width: 100vw;
+  }
+  .signin_page_main {
+    width: 100%;
+  }
+  .signin_page_login_logo {
+    width: 100%;
+  }
+  .login_id_line {
+    width: 90%;
+  }
+  .login_pw_line {
+    width: 90%;
+  }
+  .login_checkbox_wrap {
+    width: 90%;
+  }
+  .signin_page_login_btn_wrap {
+    width: 90%;
+  }
+  .signin_page_login_sns_icon_wrap {
+    width: 90%;
+  }
+}

@@ -1,0 +1,125 @@
+@media all and (max-width: 768px) {
+  body {
+    -ms-overflow-style: none;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  .container.user_mall {
+    width: 100vw;
+  }
+  /* User_mall Main */
+  .user_mall_main {
+    width: 100vw;
+  }
+  /* User_mall Main > header */
+  .user_mall_header {
+    width: 100vw;
+    height: 320px;
+  }
+  .user_mall_title {
+    width: 100vw;
+  }
+  .user_mall_title h3 {
+    width: 100%;
+  }
+  .user_mall_banner {
+    width: 100vw;
+    height: 270px;
+    justify-content: center;
+  }
+  .user_mall_banner .banner_text {
+    margin-left: 0;
+    padding: 20px 20px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  /* Graduate_User_Mall Banner */
+  .user_mall_banner.graduate {
+    justify-content: center;
+  }
+  .user_mall_banner .banner_text p {
+    font-size: 18px;
+  }
+  .user_mall_banner.graduate .banner_text {
+    margin: 0;
+  }
+  .user_mall_banner.graduate.co-buying .banner_text {
+    margin: 0;
+  }
+
+  .user_mall_section {
+    width: 100vw;
+    height: 100%;
+  }
+  .user_mall_menu {
+    margin-bottom: 10px;
+  }
+  .user_mall_menu li {
+    width: 95px;
+  }
+  .user_mall_menu li a {
+    font-size: 16px;
+  }
+  .user_mall_menu_title {
+    margin-bottom: 30px;
+  }
+  .user_mall_menu_title.best-title {
+    padding-bottom: 0;
+    margin-bottom: 30px;
+  }
+  .user_mall_menu_title.co-buying-title {
+    padding-bottom: 0;
+    margin-bottom: 30px;
+  }
+  .user_mall_menu_title p {
+    margin-bottom: 20px;
+  }
+  .user_mall_order {
+    float: none;
+    justify-content: center;
+  }
+  /* User_mall Item section */
+  .user_mall_items {
+    width: 100vw;
+    justify-content: center;
+  }
+  .user_mall_item {
+    width: 45%;
+    height: 400px;
+    margin-bottom: 30px;
+  }
+  /* User_mall Item */
+  /* Item Image 영역 */
+  .user_mall_item_img {
+    width: 100%;
+    height: 280px;
+  }
+
+  .more_view_hotitem_btn {
+    display: block;
+    width: 95vw;
+    margin: 0 auto;
+    height: 50px;
+    background-color: var(--main-green);
+    border: none;
+    color: var(--white);
+    font-size: 16px;
+    font-family: var(--kor);
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .user_mall_item:nth-child(7),
+  .user_mall_item:nth-child(8),
+  .user_mall_item:nth-child(9),
+  .user_mall_item:nth-child(10),
+  .user_mall_item:nth-child(11),
+  .user_mall_item:nth-child(12) {
+    display: none;
+  }
+  .user_mall_item_img .co-timer {
+    font-size: 16px;
+  }
+}

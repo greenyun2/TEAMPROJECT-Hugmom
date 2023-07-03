@@ -1,0 +1,366 @@
+.container.user_mall {
+  width: 100%;
+  height: 100%;
+  font-family: var(--kor);
+  color: var(--black);
+}
+
+/* User_mall Main */
+.user_mall_main {
+  /* position: absolute;
+  top: 90px; */
+  /* padding-top: 90px; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* User_mall Main > header */
+.user_mall_header {
+  width: 100%;
+  height: 351px;
+}
+.user_mall_title {
+  width: 100%;
+  padding: 15px;
+  border-bottom: 1px solid var(--gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.user_mall_title h3 {
+  width: 1280px;
+  text-align: center;
+  font-size: 18px;
+  font-family: var(--kor);
+  color: var(--black);
+}
+.user_mall_banner {
+  width: 1280px;
+  height: 300px;
+  margin: 0 auto;
+  /* border: 1px solid tomato; */
+  display: flex;
+  align-items: center;
+  background: url("/img/user_mall_banner-1.png") center center;
+  background-size: cover;
+}
+.user_mall_banner.food {
+  background: url("/img/user_mall_banner-2.jpg") center center;
+  background-size: cover;
+}
+.user_mall_banner.baby {
+  background: url("/img/user_mall_banner-3.jpg") center center;
+  background-size: cover;
+}
+.user_mall_banner.mom {
+  background: url("/img/user_mall_banner-4.png") center;
+  background-size: cover;
+}
+.user_mall_banner .banner_text {
+  font-family: var(--kor);
+  color: var(--black);
+  margin-left: 80px;
+}
+.user_mall_banner .banner_text > span {
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+.user_mall_banner .banner_text > span::after {
+  content: "";
+  display: block;
+  margin-top: 4px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--black);
+}
+.user_mall_banner .banner_text p {
+  font-size: 22px;
+  font-weight: normal;
+  line-height: 1.5;
+}
+.user_mall_banner .banner_text p span {
+  display: block;
+  font-weight: bold;
+}
+/* Graduate_User_Mall Banner */
+.user_mall_banner.graduate {
+  background: url("/img/graduate_user_mall_banner-1.png") center center;
+  background-size: cover;
+  justify-content: flex-end;
+}
+.user_mall_banner.graduate.food {
+  background: url("/img/graduate_user_mall_banner-2.png") center center;
+}
+.user_mall_banner.graduate.baby {
+  background: url("/img/graduate_user_mall_banner-3.png") center center;
+}
+.user_mall_banner.graduate.mom {
+  background: url("/img/graduate_user_mall_banner-4.png") center center;
+}
+.user_mall_banner.graduate.co-buying {
+  background: url("/img/graduate_user_mall_banner-5.png") center center;
+}
+.user_mall_banner.graduate .banner_text {
+  margin-left: 0;
+  margin-right: 70px;
+}
+.user_mall_banner.graduate.co-buying .banner_text {
+  margin-left: 0;
+  margin-right: 100px;
+}
+/* User_mall Main > Section */
+/* 식품, 육아용품, 산모용품 탭 */
+.user_mall_section {
+  width: 1280px;
+  height: 100%;
+}
+.user_mall_menu {
+  width: 100%;
+  padding: 7px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  background-color: rgba(114, 152, 30, 0.1);
+  border-radius: 5px;
+  /* border: 1px solid var(--main-green);
+  border-radius: 0 0 5px 5px;
+  border-top: 0; */
+
+  display: flex;
+  justify-content: center;
+  /* gap: 10px; */
+}
+.user_mall_menu li {
+  display: flex;
+  /* border: 1px solid var(--main-green); */
+  width: 95px;
+  padding: 5px;
+  border-radius: 5px;
+  align-items: center;
+}
+.user_mall_menu li a {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: var(--kor);
+  font-size: 16px;
+  color: var(--black);
+  padding: 5px 0;
+}
+.user_mall_menu li::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 16px;
+  background-color: var(--gray);
+  margin-left: 10px;
+}
+.user_mall_menu li:last-child::after {
+  display: none;
+}
+/* 식품, 육아용품, 산모용품 탭 체크되었을때! */
+.user_mall_menu li a.checked {
+  color: var(--main-green);
+  font-weight: bold;
+  border-bottom: 2px solid var(--main-green);
+}
+
+/* user_mall_menu_title  */
+.user_mall_menu_title {
+  text-align: center;
+  padding: 30px;
+  border-bottom: 1px solid var(--gray);
+  margin-bottom: 60px;
+}
+.user_mall_menu_title p {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+/* 추천순, 신상품순, 판매량순은 식품,육아,산모 탭 사이트에만 */
+.user_mall_order {
+  float: right;
+  display: flex;
+  gap: 10px;
+}
+.user_mall_order li {
+  display: flex;
+  align-items: center;
+}
+.user_mall_order li::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background-color: var(--gray);
+  margin-left: 10px;
+}
+.user_mall_order li:nth-child(3)::after {
+  display: none;
+}
+.user_mall_order li a {
+  font-size: 14px;
+  color: var(--gray);
+}
+/* 추천순, 신상품순, 판매량순 체크 스타일 */
+.user_mall_order li a.order_checked {
+  color: var(--black);
+  font-weight: bold;
+}
+/* Hot 버튼은 유저몰 메인에만, */
+.hot_button {
+  display: inline-block;
+  background-color: var(--red);
+  color: var(--white);
+  font-family: var(--eng);
+  font-size: 16px;
+  width: 50px;
+  height: 24px;
+  line-height: 25px;
+  border-radius: 30px;
+}
+
+/* User_mall Item section */
+.user_mall_items {
+  /* border: 1px solid blue; */
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.user_mall_item {
+  width: 23.75%;
+  height: 490px;
+  margin-bottom: 70px;
+  /* border: 1px solid tomato; */
+}
+/* User_mall Item */
+/* Item Image 영역 */
+.user_mall_item_img {
+  width: 100%;
+  height: 388px;
+  position: relative;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 5px;
+  /* z-index: 1; */
+}
+.user_mall_item_img a {
+  width: inherit;
+  height: inherit;
+}
+.user_mall_item_img img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  transition: 0.3s;
+}
+.user_mall_item_img:hover img {
+  transform: scale(1.05);
+}
+.user_mall_item_img .organic_btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--main-green);
+  padding: 10px 15px;
+  border-radius: 0 0 0 20px;
+  color: var(--white);
+}
+.user_mall_item_img .add_cart_icon_btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(114, 152, 30, 0.6);
+  width: 40px;
+  height: 40px;
+  color: var(--white);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 45px;
+
+  cursor: pointer;
+}
+.user_mall_item_img .add_cart_icon_btn i {
+  font-size: 18px;
+}
+/* 공동구매페이지 공구 타이머 */
+.user_mall_item_img .co-timer {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(114, 152, 30, 0.6);
+  padding: 15px;
+  text-align: center;
+  font-size: 18px;
+}
+/* Item info 영역 */
+.user_mall_item_info {
+  width: 100%;
+}
+.user_mall_item_info .hot_button {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 25px;
+}
+.user_mall_item_info .new_button {
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  border-radius: 30px;
+  background-color: var(--yellow);
+  color: var(--black);
+  font-family: var(--eng);
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 25px;
+}
+/* co-buying_button */
+.user_mall_item_info .coBuying_button {
+  display: inline-block;
+  width: 60px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: var(--yellow);
+  color: var(--black);
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 25px;
+}
+
+.item_info_desc {
+  margin-top: 5px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.item_title,
+.item_price,
+.item_sale {
+  font-size: 16px;
+  font-weight: bold;
+}
+.item_sale {
+  font-size: 14px;
+  color: var(--red);
+}
+.item_sale b {
+  color: var(--gray);
+  text-decoration: line-through;
+}
+.more_view_hotitem_btn {
+  display: none;
+}

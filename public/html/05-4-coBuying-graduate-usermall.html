@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome Icon js -->
+    <script
+      src="https://kit.fontawesome.com/15944cb74b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- favicon -->
+    <link rel="icon" href="/img/hugmom_logo_1.png" type="image/x-icon" />
+    <!-- Custom JS -->
+    <script defer src="/js/05-4-coBuying-graduate-usermall.js"></script>
+    <script defer src="/js/header.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>산후조리원 졸업 회원몰-공동구매</title>
+  </head>
+  <body>
+    <div class="container user_mall">
+      <!-- Header -->
+      <header>
+        <div class="header_inner">
+          <!-- Logo -->
+          <div class="hugmom_logo">
+            <a href="/html/01-intro.html">
+              <img src="/img/hugmom_logo_type_1.png" alt="" />
+            </a>
+          </div>
+
+          <!-- Mobile header Menu -->
+          <div class="mobile_heder_menu">
+            <div class="menu_toggle_btn">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="header_title_section">
+              <h1>Hugmom</h1>
+            </div>
+            <div class="cart_btn">
+              <a href="/html/08-4-mypage-cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart_count">3</span>
+              </a>
+            </div>
+          </div>
+          <!-- Header Navigaition Menu -->
+          <nav class="header_menu_list">
+            <div class="mobile_close_menu_btn">
+              <i class="fas fa-xmark"></i>
+            </div>
+            <ul>
+              <li class="header_menu shop">
+                <a href="#">SHOP</a>
+                <ul class="shop_malls">
+                  <li class="user_mall">
+                    <a href="/html/04-usermall.html">산후조리원 회원 몰</a>
+                  </li>
+                  <li class="graduate_user_mall">
+                    <a href="/html/05-graduate-usermall.html"
+                      >산후조리원 졸업회원 몰</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="header_menu live">
+                <a href="/html/07-live.html">LIVE</a>
+              </li>
+              <li class="header_menu cs">
+                <a href="#">고객센터</a>
+                <ul class="cs_menu_list">
+                  <li><a href="/html/9-1-cs-FAQ.html">자주하는 질문</a></li>
+                  <li><a href="/html/9-2-cs-inform.html">공지사항</a></li>
+                </ul>
+              </li>
+              <!-- Mobile 전용 메뉴 추가 -->
+              <li class="header_menu mobile_myFage">
+                <a href="#">마이페이지</a>
+                <ul class="mobile_myFage_list">
+                  <li><a href="/html/08-1-mypage.html">회원정보 확인</a></li>
+                  <li>
+                    <a href="/html/08-2-mypage-edit(1).html">회원정보 수정</a>
+                  </li>
+                  <li><a href="/html/08-3-mypage-order.html">주문내역</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- Search Box -->
+            <div class="search_box">
+              <input type="text" />
+              <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <!-- Mobile Logo -->
+            <div class="mobile_menu_logo">
+              <a href="/html/01-intro.html"
+                ><img src="/img/hugmom_logo_2.png" alt=""
+              /></a>
+            </div>
+            <!-- user info -->
+            <div class="user_info">
+              <div class="user_name">
+                <a href="/html/08-1-mypage.html"><span>홍길동님</span></a>
+                <a class="logout_btn" href="/html/01-intro_logout.html"
+                  >로그아웃</a
+                >
+                <i class="fas fa-chevron-down"></i>
+                <ul class="user_info_menu">
+                  <li>
+                    <a href="/html/08-4-mypage-cart.html">장바구니</a>
+                    <span class="cart_count" data-cart-count="0">3</span>
+                  </li>
+                  <li><a href="/html/08-1-mypage.html">마이페이지</a></li>
+                  <li><a href="/html/01-intro_logout.html">로그아웃</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Header -->
+
+      <!-- User_mall Main -->
+      <main class="user_mall_main">
+        <!-- User_mall Header -->
+        <div class="user_mall_header">
+          <div class="user_mall_title">
+            <h3>산후조리원 졸업 회원몰</h3>
+          </div>
+          <div class="user_mall_banner graduate co-buying">
+            <div class="banner_text">
+              <span>허그맘 공동구매</span>
+              <p>
+                <span>질 좋은 제품을 특별 할인가로 만나는 공동구매</span>
+                지금 놓치면 후회할 특별 찬스!
+              </p>
+            </div>
+            <!-- <div class="banner_img"></div> -->
+          </div>
+        </div>
+
+        <!-- User_mall Section -->
+        <section class="user_mall_section">
+          <ul class="user_mall_menu">
+            <li><a href="/html/05-graduate-usermall.html">인기상품</a></li>
+            <li><a href="/html/05-1-food-graduate-usermall.html">식품</a></li>
+            <li>
+              <a href="/html/05-2-baby-graduate-usermall.html">육아용품</a>
+            </li>
+            <li>
+              <a href="/html/05-3-mom-graduate-usermall.html">산모용품</a>
+            </li>
+            <li>
+              <a
+                class="checked"
+                href="/html/05-4-coBuying-graduate-useramll.html"
+                >공동구매</a
+              >
+            </li>
+          </ul>
+
+          <div class="user_mall_menu_title co-buying-title">
+            <p>공동구매 상품</p>
+          </div>
+
+          <div class="user_mall_items">
+            <div class="user_mall_item best_item">
+              <div class="user_mall_item_img">
+                <a href="/html/06-itemdetail/06.coBuying_itemdetail_01.html">
+                  <img src="/img/user_mall_baby_item_3.jpeg" alt="" />
+                </a>
+                <div class="co-timer">남은공구시간 03:36:00</div>
+                <!-- <div class="add_cart_icon_btn">
+                  <i class="fas fa-cart-shopping"></i>
+                </div> -->
+              </div>
+              <div class="user_mall_item_info">
+                <div class="hot_new_btns">
+                  <span class="coBuying_button">공구가</span>
+                </div>
+                <div class="item_info_desc">
+                  <span class="item_title"
+                    >밴드형/팬티형 기저귀 1박스 11종</span
+                  >
+                  <p class="item_price">50,000원~</p>
+                  <!-- <span class="item_sale">22% <b>8,900</b></span> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="user_mall_item best_item">
+              <div class="user_mall_item_img">
+                <a href="/html/06-itemdetail/06.coBuying_itemdetail_02.html">
+                  <img src="/img/user_mall_best_item_2.jpeg" alt="" />
+                </a>
+                <div class="co-timer">남은공구시간 03:36:00</div>
+                <!-- <div class="add_cart_icon_btn">
+                  <i class="fas fa-cart-shopping"></i>
+                </div> -->
+              </div>
+              <div class="user_mall_item_info">
+                <div class="hot_new_btns">
+                  <span class="coBuying_button">공구가</span>
+                </div>
+                <div class="item_info_desc">
+                  <span class="item_title">데일리 물티슈 (100매입 X 30개)</span>
+                  <p class="item_price">33,000원</p>
+                  <!-- <span class="item_sale">22% <b>8,900</b></span> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="user_mall_item best_item">
+              <div class="user_mall_item_img">
+                <a href="/html/06-itemdetail/06.coBuying_itemdetail_03.html">
+                  <img src="/img/user_mall_baby_item_11.jpeg" alt="" />
+                </a>
+                <div class="co-timer">남은공구시간 03:36:00</div>
+                <!-- <div class="add_cart_icon_btn">
+                  <i class="fas fa-cart-shopping"></i>
+                </div> -->
+              </div>
+              <div class="user_mall_item_info">
+                <div class="hot_new_btns">
+                  <span class="coBuying_button">공구가</span>
+                </div>
+                <div class="item_info_desc">
+                  <span class="item_title"
+                    >뉴오리진 a2 플래티넘 900g 2종 X 2세트</span
+                  >
+                  <p class="item_price">80,000원</p>
+                  <!-- <span class="item_sale">17% <b>16,900</b></span> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="user_mall_item best_item">
+              <div class="user_mall_item_img">
+                <a href="/html/06-itemdetail/06.coBuying_itemdetail_04.html">
+                  <img src="/img/user_mall_baby_item_12.jpeg" alt="" />
+                </a>
+                <div class="co-timer">남은공구시간 03:36:00</div>
+                <!-- <div class="add_cart_icon_btn">
+                  <i class="fas fa-cart-shopping"></i>
+                </div> -->
+              </div>
+              <div class="user_mall_item_info">
+                <div class="hot_new_btns">
+                  <span class="coBuying_button">공구가</span>
+                </div>
+                <div class="item_info_desc">
+                  <span class="item_title">유기농 분유 3종 X 2세트</span>
+                  <p class="item_price">80,000원</p>
+                  <!-- <span class="item_sale">22% <b>8,900</b></span> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="user_mall_item best_item">
+              <div class="user_mall_item_img">
+                <a href="/html/06-itemdetail/06.coBuying_itemdetail_05.html">
+                  <img src="/img/user_mall_best_item_3.jpeg" alt="" />
+                </a>
+                <div class="co-timer">남은공구시간 03:36:00</div>
+                <!-- <div class="add_cart_icon_btn">
+                  <i class="fas fa-cart-shopping"></i>
+                </div> -->
+              </div>
+              <div class="user_mall_item_info">
+                <div class="hot_new_btns">
+                  <span class="coBuying_button">공구가</span>
+                </div>
+                <div class="item_info_desc">
+                  <span class="item_title">국내산 친환경 골드키위 1.1kg</span>
+                  <p class="item_price">13,900원</p>
+                  <!-- <span class="item_sale">22% <b>8,900</b></span> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="user_mall_item best_item">
+              <div class="user_mall_item_img">
+                <a href="/html/06-itemdetail/06.coBuying_itemdetail_06.html">
+                  <img src="/img/user_mall_best_item_4.jpeg" alt="" />
+                </a>
+                <div class="co-timer">남은공구시간 03:36:00</div>
+                <!-- <div class="add_cart_icon_btn">
+                  <i class="fas fa-cart-shopping"></i>
+                </div> -->
+              </div>
+              <div class="user_mall_item_info">
+                <div class="hot_new_btns">
+                  <span class="coBuying_button">공구가</span>
+                </div>
+                <div class="item_info_desc">
+                  <span class="item_title">오늘의 샐러드 10종</span>
+                  <p class="item_price">4,900원</p>
+                  <!-- <span class="item_sale">22% <b>8,900</b></span> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="user_mall_item best_item">
+              <div class="user_mall_item_img">
+                <a href="/html/06-itemdetail/06.coBuying_itemdetail_07.html">
+                  <img src="/img/user_mall_best_item_8.jpeg" alt="" />
+                </a>
+                <div class="co-timer">남은공구시간 03:36:00</div>
+                <!-- <div class="add_cart_icon_btn">
+                  <i class="fas fa-cart-shopping"></i>
+                </div> -->
+              </div>
+              <div class="user_mall_item_info">
+                <div class="hot_new_btns">
+                  <span class="coBuying_button">공구가</span>
+                </div>
+                <div class="item_info_desc">
+                  <span class="item_title">무농약 마틸다 토마토</span>
+                  <p class="item_price">8,500원</p>
+                  <!-- <span class="item_sale">11% <b>8,900원</b></span> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="user_mall_item best_item">
+              <div class="user_mall_item_img">
+                <a href="/html/06-itemdetail/06.coBuying_itemdetail_08.html">
+                  <img src="/img/user_mall_best_item_12.jpeg" alt="" />
+                </a>
+                <div class="co-timer">남은공구시간 03:36:00</div>
+                <!-- <div class="add_cart_icon_btn">
+                  <i class="fas fa-cart-shopping"></i>
+                </div> -->
+              </div>
+              <div class="user_mall_item_info">
+                <div class="hot_new_btns">
+                  <span class="coBuying_button">공구가</span>
+                </div>
+                <div class="item_info_desc">
+                  <span class="item_title">유기농 밤고구마 800g</span>
+                  <p class="item_price">4,880원</p>
+                  <!-- <span class="item_sale">22% <b>8,900</b></span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer">
+          <div class="footer_inner">
+            <div class="footer_left">
+              <h4><span>(주)</span>Hugmom</h4>
+              <div class="footer_info">
+                <p>서울특별시 종로구 관수동 수표로 96 2F 허그맘</p>
+                <p>
+                  상호 : 주식회사 허그맘 | 대표자 : 김대단 | 사업자등록번호
+                  126-12-34567
+                </p>
+                <p class="copyright">
+                  Copyright © Hugmom Corp. All Rights Reserved.
+                </p>
+              </div>
+            </div>
+            <div class="footer_right">
+              <div class="footer_cs">
+                <span>고객센터</span>
+                <p class="cs_tel">TEL. 1544-1234</p>
+                <p>평일 : 9:00 ~ 18:00 / 토, 일, 공휴일 휴무</p>
+                <p>(점심시간 12:00 ~ 13:00)</p>
+              </div>
+              <div class="footer_sns_btn">
+                <a href="#"><img src="/img/instagram.svg" alt="" /></a>
+                <a href="#"><img src="/img/facebook.svg" alt="" /></a>
+                <a href="#"><img src="/img/blog.svg" alt="" /></a>
+                <a href="#"><img src="/img/youtube.svg" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

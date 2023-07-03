@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- API -->
+  <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  <!-- Fontawesome-->
+  <script defer src="https://kit.fontawesome.com/4d91dbe517.js" crossorigin="anonymous"></script>
+  <!-- header & footer JS -->
+  <script defer src="/js/header.js"></script>
+  <!-- Custom CSS & JS-->
+  <script defer src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+  <script defer src="/js/03-signup.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- Favicon -->
+  <link rel="icon" href="/img/hugmom_logo_1.png" type="image/x-icon" />
+  <title>회원가입</title>
+</head>
+<body>
+  <div class="container signup_page">
+      <!-- Header -->
+      <header>
+       <div class="header_inner">
+      <!-- Logo -->
+      <div class="hugmom_logo">
+        <a href="/html/01-intro_logout.html">
+          <img src="/img/hugmom_logo_type_1.png" alt="" />
+        </a>
+      </div>
+
+      <!-- Mobile header Menu -->
+      <div class="mobile_heder_menu">
+        <div class="menu_toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="header_title_section">
+          <h1>Hugmom</h1>
+        </div>
+        <div class="cart_btn">
+          <a href="/html/02-signin.html">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="cart_count">3</span>
+          </a>
+        </div>
+      </div>
+      <!-- Header Navigaition Menu -->
+      <nav class="header_menu_list">
+        <div class="mobile_close_menu_btn">
+          <i class="fas fa-xmark"></i>
+        </div>
+        <ul>
+          <li class="header_menu shop">
+            <a href="#">SHOP</a>
+            <ul class="shop_malls">
+              <li class="user_mall">
+                <a href="/html/02-signin.html">산후조리원 회원 몰</a>
+              </li>
+              <li class="graduate_user_mall">
+                <a href="/html/02-signin.html">산후조리원 졸업회원 </a>
+              </li>
+            </ul>
+          </li>
+          <li class="header_menu live">
+            <a href="/html/02-signin.html">LIVE</a>
+          </li>
+          <li class="header_menu cs">
+            <a href="#">고객센터</a>
+            <ul class="cs_menu_list">
+              <li><a href="/html/02-signin.html">자주하는 질문</a></li>
+              <li><a href="/html/02-signin.html">공지사항</a></li>
+            </ul>
+          </li>
+          <!-- Mobile 전용 메뉴 추가 -->
+          <li class="header_menu mobile_myFage">
+            <a href="#">마이페이지</a>
+            <ul class="mobile_myFage_list">
+              <li><a href="/html/02-signin.html">회원정보 확인</a></li>
+              <li>
+                <a href="/html/02-signin.html">회원정보 수정</a>
+              </li>
+              <li><a href="/html/02-signin.html">주문내역</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- Search Box -->
+        <div class="search_box">
+          <input type="text" />
+          <button>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <!-- Mobile Logo -->
+        <div class="mobile_menu_logo">
+          <a href="/html/01-intro.html"
+            ><img src="/img/hugmom_logo_2.png" alt=""
+          /></a>
+        </div>
+        <!-- Login & Join Btn -->
+        <div class="login_join_btns">
+          <ul>
+            <li><a href="/html/02-signin.html">로그인</a></li>
+            <li><a href="/html/03-signup.html">회원가입</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+      </header>
+    <!-- Header -->
+    <main class="signup_page_main">
+      <div class="signup_form_wrap">
+        <section class="signup_page_logobox_section">
+          <div class="signup_page_logo">
+            <img src="/img/hugmom_logo_type_1.png" alt="">
+          </div>
+        </section>
+        <section class="signup_page_user_info_main_tit_section">
+            <h1>회원가입</h1>
+            <span><strong>* </strong>이 있는 란은 필수작성입니다.</span>
+        </section>
+        <section class="signup_page_user_info_form_section">
+          <div class="user_info_sub_tit">
+            <h1 class="">본인정보</h1>
+          </div>
+          <form class="user_info_form">
+
+            <!-- Name -->
+            <div class="user_info_form_line line_name">
+              <label for="user_info_name">이름<strong> *</strong></label>
+              <input type="text" id="user_info_name" class="user_info_name" placeholder="이름" required>
+            </div>
+            <div class="error" id="error_name"></div>
+
+            <!-- Id -->
+            <div class="user_info_form_line line_id">
+              <label for="user_info_id">아이디<strong> *</strong></label>
+              <input type="text" id="user_info_id" placeholder="아이디" required>
+              <div class="line_id_check">
+                <button>중복확인</button>
+                <span class="id_check_result"></span>
+              </div>
+            </div>
+            
+            <!-- PassWord -->
+            <div class="user_info_form_line line_pw">
+              <label for="user_info_pw">비밀번호<strong> *</strong></label>
+              <input type="password" id="user_info_pw" placeholder="비밀번호" required> 
+            </div>
+            <div class="error" id="error_pw"></div>
+
+            <!-- Confirm PassWord -->
+            <div class="user_info_form_line line_confirm_pw">
+              <label for="user_info_confirm_pw">비밀번호 확인<strong> *</strong></label>
+              <input type="password" id="user_info_confirm_pw" placeholder="비밀번호 확인" required>
+            </div>
+            <div class="error" id="error_pw2"></div>
+
+            <!-- Birth -->
+            <div class="user_info_form_line line_birth_date">
+              <label for="user_info_birth_date">생년월일<strong> *</strong></label>
+              <input type="text" id="user_info_birth_date" placeholder="생년월일 8자리. : yyyymmdd" maxlength="8"  required>
+            </div>
+            <div class="error" id="error_birth"></div>
+
+            <!-- Tel -->
+            <div class="user_info_form_line line_tel">
+              <label for="user_info_tel">연락처<strong> *</strong></label>
+              <div>
+                <div>
+                  <input type="text" placeholder="000" id="phone_1" onchange="changePhone1()" onkeyup="onchange()" maxlength="3"> 
+                  -
+                  <input type="text" placeholder="0000" id="phone_2" onchange="changePhone2()" onkeyup="onchange()" maxlength="4"> -
+                  <input type="text" placeholder="0000" id="phone_3" onchange="changePhone3()" onkeyup="onchange()" maxlength="4">
+                </div>
+                <button onclick="getToken()" id="token_button" disabled>인증번호</button>
+              </div>
+            </div>
+            <!-- Token -->
+            <div class="token_wrap">
+              <div class="token_wrapper" id="token_wrapper">인증번호 : 
+                <span class="token_number" id="token_number"></span>
+              </div>
+              <span class="token_timer" id="token_timer">3:00</span>
+            </div>
+            <!-- Certified Tel  -->
+            <div class="line_tel_certified">
+                <input id="token_complete_input" type="text" placeholder="인증번호를 입력해 주세요.">
+                <button onclick="getTokenTimerConfirm(event)" id="token_complete_btn" disabled>인증하기</button>
+            </div>
+
+            <!-- Email -->
+            <div class="user_info_form_line line_email">
+              <label for="user_info_email">이메일<strong> *</strong></label>
+              <input type="email" id="user_info_email" placeholder="hugmom@hug.com" required>
+            </div>
+            <div class="error" id="error_email"></div>
+
+            <!-- Address -->
+            <div class="user_info_form_line line_address">
+              <label for="user_info_address">주소<strong> *</strong></label>
+              <div class="address_wrap">
+                <div class="address_wrap_first">
+                  <input id="zip_code" type="text"  maxlength="5" required>
+                  <button id="address_btn">우편번호 찾기</button>
+                </div>
+                <div class="address_wrap_second">
+                  <input id="address_1" type="text" readonly required>
+                </div>
+                <div class="address_wrap_third">
+                  <input id="user_info_location" type="text" placeholder="상세주소를 입력해주세요" required>
+                </div>
+              </div>
+            </div>
+            <div class="error" id="error_location"></div>
+            
+          <!-- Code -->
+          <div class="user_info_form_line line_pregnant_women_code">
+            <label for="user_info_pregnant_women_code">임산부코드<strong>   *</strong></label>
+            <div>
+              <input type="text"  id="user_info_pregnant_women_code" placeholder="임산부코드를 입력해 주세요." required>
+              <p class="pregnant_women_code_result">.</p>
+            </div>
+          </div>
+          </section>
+
+        <section class="signup_page_carecenter_info_section">
+          <div class="user_info_sub_tit">
+            <h1>산후조리원 정보</h1>
+          </div>
+          <div class="carecenter_info_wrap">
+              <label for="carecenter_info">소속 산후조리원<strong> *</strong></label>
+              <div class="carecenter_info_content">
+                <div>
+                  <input id="carecenter_address" type="text" name="carecenter_info" required>
+                  <button id="carecenter_btn">산후조리원 찾기</button>
+                </div>
+                <div>
+                  <input id="carecenter_info_sub" type="text" name="carecenter_info_sub" placeholder="상세주소">
+                </div>
+                <div id="error_sub_location"></div>
+              </div>
+            </div>
+          </section>
+          <section class="signup_page_guardian_info_section">
+            <div class="guardian_info_tit">
+              <h1>보호자정보<span>(선택사항)</span></h1>
+              <p>
+                단, 보호자 정보를 입력하지 않을 시에 보호자분은 따로 가입이
+                불가능합니다.
+              </p>
+            </div>
+            <div class="guardian_info_wrap">
+              <div class="guardian_info_content">
+                <label for="guardian_name">보호자 이름</label>
+                <input type="text" id="guardian_name" />
+              </div>
+              <div class="guardian_info_content">
+                <label for="">본인과의 관계</label>
+                <input type="text" id="guardian_relationship" />
+              </div>
+              <div class="guardian_info_content">
+                <label for="guardian_tel">보호자 연락처</label>
+                <input type="tel" id="guardian_tel" />
+              </div>
+            </div>
+          </section>
+        </div>
+        <section class="signup_page_agreement_section">
+          <div class="agreement_tit">
+            <h1>약관동의</h1>
+            <button id="all_agreement">전체 동의</button>
+          </div>
+          <hr />
+          <div class="agreement_contents_wrap">
+            <a id="agreement_check1" href="#">
+              <div class="agreement_contents_item">
+                <!-- <input type="checkbox" /> -->
+                <i id="agreement_circle_1"  class="fa-regular fa-circle-check"></i>
+                <label for="agreement_check">이용약관 동의( 필수 )</label>
+              </div>
+            </a>
+            <div class="agreement_contents_item">
+              <i class="fa-solid fa-chevron-right"></i>
+              <a href="#">자세히보기</a>
+            </div>
+          </div>
+          <div class="agreement_contents_wrap">
+            <a id="agreement_check2" href="#">
+              <div class="agreement_contents_item">
+                <!-- <input type="checkbox" /> -->
+                <i id="agreement_circle_2" class="fa-regular fa-circle-check"></i>
+                <label for="">개인정보 취급방침 동의( 필수 )</label>
+              </div>
+            </a>
+            <div class="agreement_contents_item">
+              <i class="fa-solid fa-chevron-right"></i>
+              <a href="#">자세히보기</a>
+            </div>
+          </div>
+          <div class="agreement_contents_wrap">
+            <a id="agreement_check3" href="#">
+              <div class="agreement_contents_item">
+                <!-- <input type="checkbox" /> -->
+                <i id="agreement_circle_3" class="fa-regular fa-circle-check"></i>
+                <label for="">마케팅 정보 수신 동의 ( 선택 )</label>
+              </div>
+            </a>
+            <div class="agreement_contents_item">
+              <i class="fa-solid fa-chevron-right"></i>
+              <a href="#">자세히보기</a>
+            </div>
+          </div>
+          <div class="agreement_contents_btn">
+            <button onclick="signup(event)">회원가입</button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- Footer -->
+        <footer>
+          <div class="footer">
+            <div class="footer_inner">
+              <div class="footer_left">
+                <h4><span>(주)</span>Hugmom</h4>
+                <div class="footer_info">
+                  <p>서울특별시 종로구 관수동 수표로 96 2F 허그맘</p>
+                  <p>
+                    상호 : 주식회사 허그맘 | 대표자 : 김대단 | 사업자등록번호
+                    126-12-34567
+                  </p>
+                  <p class="copyright">
+                    Copyright © Hugmom Corp. All Rights Reserved.
+                  </p>
+                </div>
+              </div>
+              <div class="footer_right">
+                <div class="footer_cs">
+                  <span>고객센터</span>
+                  <p class="cs_tel">TEL. 1544-1234</p>
+                  <p>평일 : 9:00 ~ 18:00 / 토, 일, 공휴일 휴무</p>
+                  <p>(점심시간 12:00 ~ 13:00)</p>
+                </div>
+                <div class="footer_sns_btn">
+                  <a href="#"><img src="/img/instagram.svg" alt="" /></a>
+                  <a href="#"><img src="/img/facebook.svg" alt="" /></a>
+                  <a href="#"><img src="/img/blog.svg" alt="" /></a>
+                  <a href="#"><img src="/img/youtube.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

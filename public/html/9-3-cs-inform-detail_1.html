@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome Icon js -->
+    <script
+      src="https://kit.fontawesome.com/15944cb74b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- Custom CSS & JS -->
+    <link rel="stylesheet" href="/css/style.css" />
+    <script defer src="/js/header.js"></script>
+    <!-- Favicon -->
+    <link rel="icon" href="/img/hugmom_logo_1.png" type="image/x-icon" />
+    <title>[서비스 안내] 허그맘 서비스 메인 개편</title>
+  </head>
+  <body>
+    <div class="container cs-FAQ">
+      <!-- Main Header -->
+      <header>
+        <div class="header_inner">
+          <!-- Logo -->
+          <div class="hugmom_logo">
+            <a href="/html/01-intro.html">
+              <img src="/img/hugmom_logo_type_1.png" alt="" />
+            </a>
+          </div>
+
+          <!-- Mobile header Menu -->
+          <div class="mobile_heder_menu">
+            <div class="menu_toggle_btn">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="header_title_section">
+              <h1>Hugmom</h1>
+            </div>
+            <div class="cart_btn">
+              <a href="/html/08-4-mypage-cart.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart_count">3</span>
+              </a>
+            </div>
+          </div>
+          <!-- Header Navigaition Menu -->
+          <nav class="header_menu_list">
+            <div class="mobile_close_menu_btn">
+              <i class="fas fa-xmark"></i>
+            </div>
+            <ul>
+              <li class="header_menu shop">
+                <a href="#">SHOP</a>
+                <ul class="shop_malls">
+                  <li class="user_mall">
+                    <a href="/html/04-usermall.html">산후조리원 회원 몰</a>
+                  </li>
+                  <li class="graduate_user_mall">
+                    <a href="/html/05-graduate-usermall.html"
+                      >산후조리원 졸업회원 몰</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="header_menu live">
+                <a href="/html/07-live.html">LIVE</a>
+              </li>
+              <li class="header_menu cs">
+                <a href="#">고객센터</a>
+                <ul class="cs_menu_list">
+                  <li><a href="/html/9-1-cs-FAQ.html">자주하는 질문</a></li>
+                  <li><a href="/html/9-2-cs-inform.html">공지사항</a></li>
+                </ul>
+              </li>
+              <!-- Mobile 전용 메뉴 추가 -->
+              <li class="header_menu mobile_myFage">
+                <a href="#">마이페이지</a>
+                <ul class="mobile_myFage_list">
+                  <li><a href="/html/08-1-mypage.html">회원정보 확인</a></li>
+                  <li>
+                    <a href="/html/08-2-mypage-edit(1).html">회원정보 수정</a>
+                  </li>
+                  <li><a href="/html/08-3-mypage-order.html">주문내역</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <!-- Search Box -->
+            <div class="search_box">
+              <input type="text" />
+              <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+            <!-- Mobile Logo -->
+            <div class="mobile_menu_logo">
+              <a href="/html/01-intro.html"
+                ><img src="/img/hugmom_logo_2.png" alt=""
+              /></a>
+            </div>
+            <!-- user info -->
+            <div class="user_info">
+              <div class="user_name">
+                <a href="/html/08-1-mypage.html"><span>홍길동님</span></a>
+                <a class="logout_btn" href="/html/01-intro_logout.html"
+                  >로그아웃</a
+                >
+                <i class="fas fa-chevron-down"></i>
+                <ul class="user_info_menu">
+                  <li>
+                    <a href="/html/08-4-mypage-cart.html">장바구니</a>
+                    <span class="cart_count" data-cart-count="0">3</span>
+                  </li>
+                  <li><a href="/html/08-1-mypage.html">마이페이지</a></li>
+                  <li><a href="/html/01-intro_logout.html">로그아웃</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- Main Header -->
+      <main>
+        <nav class="cs_nav">
+          <div class="cs_nav_wrap">
+            <span class="cs_nav_first">고객센터</span>
+            <i class="bi bi-chevron-right"></i>
+            <span>공지사항</span>
+          </div>
+        </nav>
+        <div class="cs_contents">
+          <!-- Left Content -->
+          <aside>
+            <h2>고객센터</h2>
+            <ul class="cs_FAQ_menu">
+              <li>
+                <a href="/html/9-1-cs-FAQ.html">자주하는 질문</a>
+              </li>
+              <li>
+                <a class="cs_FAQ_menu_select" href="/html/9-2-cs-inform.html"
+                  >공지사항 <i class="bi bi-chevron-right"></i
+                ></a>
+              </li>
+            </ul>
+          </aside>
+          <!-- Right Content -->
+          <section class="cs_FAQ_inner">
+            <!-- 공지사항 박스 -->
+            <article class="cs_notice cs_article">
+              <div class="cs_notice_tit">
+                <h2 class="cs_title">공지사항</h2>
+              </div>
+              <div class="notice_detail_contents">
+                <div class="notice_detail_tit">
+                  <h2>[서비스 안내] 허그맘 서비스 메인 개편</h2>
+                  <p>2023.01.30</p>
+                  <span>중요 : BEST</span>
+                </div>
+                <div class="notice_detail_img">
+                  <img src="/img/notice_detail_item_1.jpg" alt="" />
+                </div>
+                <div class="notice_detail_content">
+                  <p></p>
+                  <p>안녕하세요. 허그맘입니다.</p>
+                  <p>
+                    허그맘에서 누구나 도전할 수 있도록 프리오더 서비스가
+                    리뉴얼됩니다.
+                  </p>
+                  <p>
+                    해외에서 론칭된 리워드를 국내에서 공식적으로 만나볼 수 있는
+                    글로벌 프로젝트와 많은 서포터님들의 응원을 받아 성공한
+                    프로젝트의 동일 리워드를 다시 만나볼 수 있는 앵콜
+                    프로젝트에서 확장해<br /><br />
+                    모든 카테고리에서 기존에 출시된 제품・서비스・콘텐츠를 더욱
+                    특별한 혜택을 통해 제공하는 프리오더 프로젝트를 만나보실 수
+                    있습니다.
+                  </p>
+                  <p></p>
+                  <h1 class="notice_detail_content_tit_1">
+                    프리오더(PRE-ORDER) 서비스란?
+                  </h1>
+                  <div class="notice_detail_img">
+                    <img src="/img/notice_detail_item_2.jpg" alt="" />
+                  </div>
+                  <p>
+                    프리오더 서비스란 특별한 혜택이 있는 리워드를 예약 구매하는
+                    서비스입니다.
+                  </p>
+                  <p>
+                    허그맘 서비스를 둘러보다 '예약구매' 레이블로 한 눈에
+                    프리오더 프로젝트를 구분하고, 눈길이 가는 프로젝트에 몇 명이
+                    참여하고 있는지 쉽게 확인할수 있습니다.
+                  </p>
+                  <p>
+                    리뉴얼된 프리오더 프로젝트는 프리오더 홈 에서 모아 보실 수
+                    있어요.<br />
+                    프리오더 홈에 추가된 카테고리 필터로 관심있는 분야의
+                    프로젝트만 선별해 더욱 편리하게 프로젝트를 탐색할 수
+                    있습니다.
+                  </p>
+                  <p></p>
+                  <h1 class="notice_detail_content_tit_2">
+                    마음에 쏙 드는 프로젝트를 발견하셨다면?<br />
+                    프로젝트 상세페이지를 확인해 보세요.
+                  </h1>
+                  <div class="notice_detail_img">
+                    <img src="/img/notice_detail_item_3.jpg" alt="" />
+                  </div>
+                  <p>
+                    상세 페이지에서는 맨 처음 레이블로 어떤 혜택을 담고 있는지
+                    한 눈에 확인하실 수 있습니다.
+                  </p>
+                  <ul>
+                    <li>
+                      국내단독: 국내에서는 허그맘에서만 만나볼 수 있는 제품 또는
+                      서비스를 리워드로 제공하는 경우
+                    </li>
+                    <li>
+                      특별구성: 허그맘 전용 구성 또는 혜택을 리워드로 제공하는
+                      경우
+                    </li>
+                    <li>
+                      한정판: 한정된 수량으로 출시된 특별한 제품 또는 서비스를
+                      리워드로 제공하는 경우
+                    </li>
+                  </ul>
+                  <p>
+                    프로젝트에 참여하기 전 꼭 확인해야 할 안내사항은 공지 배너
+                    한 곳에 모았어요. 탭을 선택해 필요한 정보를 꼼꼼하게 확인 후
+                    참여해 주세요. 프로젝트가 마음에 드셨다면 다음 방법으로
+                    참여할 수 있습니다.
+                  </p>
+                  <ul>
+                    <li>
+                      프로젝트가 성공할 수 있도록 리워드를 예약 구매하거나
+                    </li>
+                    <li>
+                      메이커의 멋진 이야기가 세상에 알려질 수 있도록 지지서명해
+                      주세요
+                    </li>
+                  </ul>
+                  <p>
+                    특별한 혜택이 있는 리워드를 예약 구매하셨다면 프로젝트가
+                    성공 종료하길 기다려 주세요. 프리오더 서비스는
+                    전자상거래법에 의해 보호받기 때문에 리워드를 받아보신 후
+                    서포터님의 기대와 다를 경우 편하게 환불 신청할 수 있습니다.
+                  </p>
+                  <h3 class="notice_detail_content_tit_3">
+                    어떤 서비스에 참여했는지 확인은? 마이페이지에서
+                  </h3>
+                  <div class="notice_detail_img">
+                    <img src="/img/notice_detail_item_4.jpg" alt="" />
+                  </div>
+                  <p>
+                    서포터님들께 도움이 되는 정보를 쉽게 확인할 수 있도록 메뉴를
+                    정돈했어요.
+                  </p>
+                  <p>
+                    펀딩・프리오더・스토어 서비스 별로 참여한 횟수를 확인할 수
+                    있습니다. 각 서비스를 선택하면 참여한 프로젝트의 진행 현황,
+                    배송 상태, 환불 신청 등 자세한 정보를 확인할 수 있어요.
+                  </p>
+                  <p>
+                    매력적인 프로젝트에 부담없이 참여할 수 있도록, 지금 바로
+                    사용 가능한 포인트와 쿠폰 현황을 마이페이지 가장 위쪽에서
+                    바로 확인할 수 있도록 변경했습니다.
+                  </p>
+                  <p>감사합니다.<br /><br />허그맘 드림</p>
+                  <div class="notice_detail_prev_btn">
+                    <a href="9-2-cs-inform.html">목록으로 돌아가기</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </main>
+      <!-- Footer -->
+      <footer>
+        <footer>
+          <div class="footer">
+            <div class="footer_inner">
+              <div class="footer_left">
+                <h4><span>(주)</span>Hugmom</h4>
+                <div class="footer_info">
+                  <p>서울특별시 종로구 관수동 수표로 96 2F 허그맘</p>
+                  <p>
+                    상호 : 주식회사 허그맘 | 대표자 : 김대단 | 사업자등록번호
+                    126-12-34567
+                  </p>
+                  <p class="copyright">
+                    Copyright © Hugmom Corp. All Rights Reserved.
+                  </p>
+                </div>
+              </div>
+              <div class="footer_right">
+                <div class="footer_cs">
+                  <span>고객센터</span>
+                  <p class="cs_tel">TEL. 1544-1234</p>
+                  <p>평일 : 9:00 ~ 18:00 / 토, 일, 공휴일 휴무</p>
+                  <p>(점심시간 12:00 ~ 13:00)</p>
+                </div>
+                <div class="footer_sns_btn">
+                  <a href="#"><img src="/img/instagram.svg" alt="" /></a>
+                  <a href="#"><img src="/img/facebook.svg" alt="" /></a>
+                  <a href="#"><img src="/img/blog.svg" alt="" /></a>
+                  <a href="#"><img src="/img/youtube.svg" alt="" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </footer>
+      <!-- Footer -->
+    </div>
+  </body>
+</html>

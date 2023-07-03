@@ -1,0 +1,54 @@
+@import url("/css/reset.css");
+@import url("/css/variable.css");
+
+@import url("/css/header.css");
+@import url("/css/01-intro.css");
+@import url("/css/02-signin.css");
+@import url("/css/03-signup.css");
+@import url("/css/02-1-signin-findID.css");
+@import url("/css/04-usermall.css");
+@import url("/css/04-usermall-mobile.css");
+@import url("/css/06-mall_itemdetail.css");
+@import url("/css/07-live.css");
+@import url("/css/07-1.live_detail.css");
+@import url("/css/08-mypage.css");
+@import url("/css/08-mypage-mobile.css");
+@import url("/css/08-5-CScenter-FAQ.css");
+@import url("/css/09-cs.css");
+@import url("/css/10-inquiry.css");
+@import url("/css/footer.css");
+
+header {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 90px;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--gray);
+}
+main {
+  padding-top: 90px;
+}
+
+footer {
+  float: bottom;
+  width: 100%;
+  /* height: 275px; */
+  height: 200px;
+  font-family: var(--kor);
+  border-top: 1px solid var(--gray);
+  color: var(--black);
+}
+
+@media all and (max-width: 768px) {
+  header {
+    width: 100vw;
+    height: 60px;
+  }
+  footer {
+    width: 100vw;
+  }
+  main {
+    padding-top: 60px;
+  }
+}

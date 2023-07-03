@@ -1,0 +1,730 @@
+/* Common CSS */
+/* ### 수정한 부분 ### */
+.container.cs-FAQ {
+  width: 100%;
+  height: 100%;
+  font-family: var(--kor);
+}
+/* ### 수정한 부분 ### */
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Top Bar */
+.cs_nav {
+  border-bottom: 1px solid var(--gray);
+  width: 100%;
+  height: 40px;
+}
+.cs_nav_wrap {
+  width: 1280px;
+  padding: 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.cs_nav_wrap span {
+  font-family: var(--kor);
+  color: var(--black);
+  font-size: 16px;
+  font-weight: bold;
+}
+.cs_nav_wrap .cs_nav_first {
+  color: var(--main-green);
+}
+
+/* All Contents */
+/* ### 수정한 부분 ### */
+.cs_contents {
+  width: 1280px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* ### 수정한 부분 ### */
+/* Left Content */
+.cs_contents aside {
+  width: 197px;
+  height: 100vh;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.cs_contents aside h2 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.cs_contents aside .cs_FAQ_menu {
+  padding: 30px 0;
+}
+.cs_contents aside li:first-child {
+  margin-bottom: 20px;
+}
+.cs_FAQ_menu li a {
+  color: var(--black);
+}
+.cs_FAQ_menu li a.cs_FAQ_menu_select,
+.cs_FAQ_menu li a.cs_FAQ_menu_select i {
+  color: var(--main-green);
+  font-weight: 700;
+}
+/* ### 수정한 부분 ### */
+
+/* ### Right Content ### */
+.cs_FAQ_inner {
+  /* 1280 - 197 = 1083 */
+  width: calc(100% - 197px);
+  height: 100%;
+  border-left: 1px solid var(--gray);
+}
+.cs_FAQ_inner .cs_article {
+  /* 1083 - 127 = 956 */
+  width: calc(100% - 127px);
+
+  margin: 40px 0 40px 126px;
+}
+.cs_article .cs_chapbot_tit {
+  color: var(--black);
+  font-family: var(--kor);
+
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  border-bottom: 3px solid var(--sub-green);
+}
+.cs_article .cs_title {
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 10px;
+}
+.cs_article .cs_title::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 8px;
+  background-color: var(--sub-green);
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -25px;
+}
+.cs_chapbot_contents {
+  width: 100%;
+  /* height: 263px; */
+
+  display: flex;
+
+  background-color: var(--lightest-gray);
+  border-radius: 5px;
+}
+.cs_chapbot_content_left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  margin: 50px 0 50px 80px;
+}
+.cs_chapbot_content_left h2 {
+  color: var(--black);
+  margin-bottom: 13px;
+  font-size: 18px;
+}
+.cs_chapbot_content_left h1 {
+  color: var(--black);
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.cs_chapbot_content_left h1 + p {
+  margin-bottom: 17px;
+}
+.cs_chapbot_content_left p {
+  font-size: 16px;
+  color: var(--black);
+}
+
+.cs_chapbot_content_right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cs_chapbot_content_right button {
+  width: 263px;
+  height: 60px;
+
+  background-color: var(--main-green);
+  border: none;
+  border-radius: 5px;
+
+  color: var(--white);
+  font-family: var(--kor);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* FAQ 자주하는 질문 박스 */
+.cs_ask_ques {
+  height: 100%;
+}
+.cs_article .cs_ask_ques_tit {
+  color: var(--black);
+  font-family: var(--kor);
+
+  padding-bottom: 30px;
+  margin-bottom: 13px;
+  border-bottom: 3px solid var(--sub-green);
+}
+.cs_ask_ques_contents {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.cs_ask_ques_search {
+  height: 105px;
+
+  background-color: var(--lightest-gray);
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cs_ask_ques_search label {
+  font-size: 16px;
+  color: var(--black);
+
+  margin: 44px 25px 43px 58px;
+}
+.cs_ask_ques_search input {
+  width: 590px;
+  height: 50px;
+  margin-right: 23px;
+
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  outline: 0;
+  padding-left: 15px;
+}
+.cs_ask_ques_search button {
+  width: 78px;
+  height: 50px;
+
+  background-color: var(--main-green);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: var(--kor);
+  color: var(--white);
+}
+/* 아코디언 */
+.cs_ask_ques_accordion {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  border-top: 1px solid var(--main-green);
+}
+.cs_ask_ques_accordion .cs_ask_ques_accordion_item {
+  /* padding: 25px 0 25px 0; */
+  display: flex;
+  flex-direction: column;
+
+  border-bottom: 1px solid var(--main-green);
+}
+
+.cs_ask_ques_accordion_item .accordionTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--black);
+  padding-left: 19px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 25px 0;
+  font-weight: 400;
+}
+.cs_ask_ques_accordion_item .accIcon {
+  float: right;
+}
+.cs_ask_ques_accordion_item .accIcon i {
+  padding-right: 19px;
+
+  padding: 8px;
+}
+.cs_ask_ques_accordion_item .text {
+  /* margin-top: 22px; */
+  padding: 32px 67px 42px 67px;
+
+  background-color: var(--lightest-gray);
+  border-top: 1px solid var(--main-green);
+  /* border-bottom: 1px solid var(--main-green); */
+
+  display: none;
+}
+.cs_ask_ques_accordion_item.open .text {
+  display: block;
+}
+.cs_ask_ques_accordion_item.open i {
+  padding-left: 19px;
+  transform: rotate(180deg);
+}
+.cs_ask_ques_accordion_item .text p {
+  font-size: 16px;
+  color: var(--black);
+  line-height: 40px;
+}
+.err {
+  width: 100%;
+  margin-top: 30px;
+  justify-content: center;
+  display: none;
+}
+.err h1 {
+  color: var(--gray);
+}
+/* 공지사항 */
+.cs_notice {
+  /* border: 1px solid blue; */
+  height: 100%;
+  font-family: var(--kor);
+}
+.cs_article .cs_notice_tit {
+  color: var(--black);
+  font-family: var(--kor);
+  padding-bottom: 30px;
+  border-bottom: 3px solid var(--sub-green);
+}
+.cs_notice_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cs_notice_menu_item {
+  width: 910px;
+  height: 160px;
+  border-bottom: 1px solid var(--main-green);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+
+  /* cursor: pointer; */
+}
+.cs_notice_item_left {
+  width: 680px;
+  margin-bottom: 22px;
+  margin-top: 25px;
+  margin-left: 19px;
+  /* border: 1px solid red; */
+}
+.cs_notice_item_left h2 {
+  width: inherit;
+  margin-top: 10px;
+  margin-bottom: 18px;
+
+  color: var(--black);
+  font-size: 18px;
+}
+.cs_notice_item_left span {
+  font-size: 18px;
+}
+.cs_notice_item_left span:nth-child(1) {
+  color: var(--red);
+}
+.cs_notice_item_left span:last-child {
+  color: var(--black);
+}
+.cs_notice_item_right {
+  width: 230px;
+  height: 100%;
+
+  /* margin-top: 16px; */
+  /* margin-bottom: 12px; */
+  margin-right: 19px;
+  background-color: var(--white);
+}
+.cs_notice_item_right img {
+  width: 100%;
+  height: inherit;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+/* ### Notice Detail Page ### */
+.notice_detail_contents {
+  width: 952px;
+  height: 100%;
+  margin-top: 56px;
+  font-family: var(--kor);
+}
+.notice_detail_tit {
+  margin-bottom: 23px;
+}
+.notice_detail_tit h2 {
+  margin-bottom: 23px;
+
+  color: var(--black);
+  font-family: var(--kor);
+}
+.notice_detail_tit p {
+  margin-bottom: 23px;
+
+  font-size: 18px;
+  color: var(--black);
+}
+.notice_detail_tit span {
+  font-size: 18px;
+  color: var(--red);
+}
+.notice_detail_img:nth-child(1) {
+  margin-bottom: 63px;
+}
+.notice_detail_img img {
+  width: 100%;
+  height: auto;
+}
+
+/* P Tag */
+.notice_detail_content p {
+  font-size: 16px;
+  color: var(--black);
+  margin: 12px 0;
+  line-height: 40px;
+  word-break: keep-all;
+}
+/* H1, H3 Tag */
+.notice_detail_content h1 {
+  margin: 60px 0 20px;
+  font-size: 32px;
+  line-height: 50px;
+}
+.notice_detail_content h3 {
+  margin: 60px 0 20px;
+  font-size: 28px;
+}
+/* Li Tag */
+.notice_detail_contents ul li {
+  margin-left: 20px;
+  list-style: disc;
+  line-height: 40px;
+  word-break: keep-all;
+}
+/* Bottom Button */
+.notice_detail_prev_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 60px;
+}
+.notice_detail_prev_btn a {
+  width: 285px;
+  height: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--main-green);
+  border-radius: 5px;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Detail Page 3 */
+.cs_inform_detail_img img {
+  width: 652px;
+  height: 116px;
+}
+/* Detail Page 7 */
+.notice_detail_img_7 img {
+  width: 960px;
+  height: auto;
+}
+
+/* 9-1-cs-FAQ */
+@media all and (max-width: 768px) {
+  /* Common CSS */
+  .container.cs-FAQ {
+    width: 100%;
+  }
+  .cs_nav {
+    background-color: var(--lightest-gray);
+    /* height: 30px; */
+  }
+  .cs_nav_wrap {
+    width: 100%;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .cs_nav_wrap span {
+    font-family: var(--kor);
+    color: var(--dark-gray);
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .cs_nav_wrap i {
+    color: var(--dark-gray);
+  }
+  .cs_nav_wrap .cs_nav_first {
+    color: var(--dark-gray);
+  }
+  .cs_contents {
+    width: 100%;
+    /* height: auto; */
+    margin: 0 auto;
+    display: flex;
+    font-family: var(--kor);
+    overflow: hidden;
+  }
+  /* Delete Left Content */
+  .cs_contents aside {
+    display: none;
+  }
+  /* Mypage Title */
+  .cs_article .cs_chapbot_tit {
+    padding: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+  .cs_article .cs_title {
+    font-size: 18px;
+    font-weight: 800;
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 25px;
+  }
+  .cs_article .cs_title::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 8px;
+    background-color: var(--sub-green);
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -25px;
+  }
+  /* Right Content */
+  .cs_FAQ_inner {
+    width: 100%;
+    padding: 40px 20px;
+  }
+  .cs_FAQ_inner .cs_article {
+    width: 100%;
+    margin: 0;
+  }
+  .cs_chapbot_contents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+  }
+  .cs_chapbot_content_left {
+    margin: 20px;
+  }
+  .cs_chapbot_content_right {
+    width: 100%;
+  }
+  .cs_chapbot_content_right button {
+    width: 200px;
+    height: 40px;
+
+    background-color: var(--main-green);
+    border: none;
+    border-radius: 5px;
+
+    color: var(--white);
+    font-size: 14px;
+  }
+  /*   */
+  .cs_ask_ques {
+    width: 100%;
+  }
+  .cs_article .cs_ask_ques_tit {
+    padding: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+  .cs_ask_ques_contents {
+    width: 100%;
+  }
+  .cs_ask_ques_search {
+    width: 100%;
+    justify-content: center;
+  }
+  .cs_ask_ques_search label {
+    font-size: 14px;
+    color: var(--black);
+
+    margin: 44px 15px;
+  }
+  .cs_ask_ques_search input {
+    width: 50%;
+    height: 40px;
+    border: 1px solid var(--gray);
+    border-radius: 5px;
+    outline: 0;
+    margin-right: 10px;
+  }
+  .cs_ask_ques_search button {
+    width: 78px;
+    height: 40px;
+
+    font-size: 14px;
+    margin-right: 15px;
+  }
+
+  /* 아코디언 */
+  .cs_ask_ques_accordion {
+    width: 100%;
+  }
+  .cs_ask_ques_accordion .cs_ask_ques_accordion_item {
+    width: 100%;
+  }
+  .cs_ask_ques_accordion .cs_ask_ques_accordion_item h2 {
+    font-size: 14px;
+  }
+  .cs_ask_ques_accordion_item .accordionTitle {
+    margin: 20px 0;
+  }
+  .cs_ask_ques_accordion_item .accIcon {
+    float: right;
+  }
+  .cs_ask_ques_accordion_item .accIcon i {
+    padding-right: 19px;
+  }
+  .cs_ask_ques_accordion_item .text {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    display: none;
+  }
+  .cs_ask_ques_accordion_item .text p {
+    font-size: 14px;
+    color: var(--black);
+    margin: 0 30px;
+  }
+
+  /* ### 9-2-cs-inform ### */
+  /* 공지사항 */
+  .cs_notice {
+    width: 100vw;
+    margin: 0 auto;
+  }
+  .cs_article .cs_notice_tit {
+    padding: 0;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  .cs_notice_menu {
+    width: 100%;
+  }
+  .cs_notice_menu_item {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .cs_notice_item_left {
+    width: 100vw;
+    margin-left: 0;
+    padding: 0 15px;
+    flex: 1;
+  }
+  .cs_notice_item_left h2 {
+    margin-top: 10px;
+    margin-bottom: 18px;
+
+    color: var(--black);
+    font-size: 16px;
+  }
+  .cs_notice_item_left span {
+    font-size: 16px;
+  }
+  .cs_notice_item_right {
+    display: none;
+  }
+  .cs_notice_item_right img {
+    display: none;
+  }
+
+  /* ### Notice Detail Page ### */
+  .notice_detail_contents {
+    width: 100%;
+    margin-top: 10px;
+    margin: 0 auto;
+  }
+  .notice_detail_tit {
+    margin-bottom: 23px;
+  }
+  .notice_detail_tit h2 {
+    margin: 23px 0 10px 0;
+    font-size: 17px;
+  }
+  .notice_detail_tit p {
+    margin-bottom: 10px;
+
+    font-size: 16px;
+    color: var(--black);
+  }
+  .notice_detail_tit span {
+    font-size: 14px;
+    color: var(--red);
+  }
+  .notice_detail_img:nth-child(1) {
+    margin-bottom: 63px;
+  }
+  .notice_detail_img img {
+    width: 100%;
+    height: auto;
+  }
+  /* P Tag */
+  .notice_detail_content p {
+    font-size: 14px;
+    color: var(--black);
+    line-height: 25px;
+    margin: 12px 0;
+  }
+  /* H1, H3 Tag */
+  .notice_detail_content h1 {
+    margin: 48px 0 16px;
+    font-size: 24px;
+  }
+  .notice_detail_content h3 {
+    margin: 40px 0 16px;
+    font-size: 23px;
+  }
+
+  .notice_detail_prev_btn a {
+    width: 200px;
+    height: 50px;
+    font-size: 14px;
+  }
+  /* Detail Page 3 */
+  .cs_inform_detail_img img {
+    width: 100%;
+    height: auto;
+  }
+  /* Detail Page 7 */
+  .notice_detail_img_7 img {
+    width: 100%;
+    height: auto;
+  }
+}

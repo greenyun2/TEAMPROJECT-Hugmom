@@ -1,0 +1,922 @@
+/* Common CSS */
+
+/* Top Bar */
+.mypage_nav {
+  border-bottom: 1px solid var(--gray);
+  width: 100%;
+  /* height: 40px; */
+  /* padding: 15px 0; */
+}
+.mypage_nav_wrap {
+  width: 1280px;
+  padding: 10px 0;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.mypage_nav_wrap span {
+  font-family: var(--kor);
+  color: var(--black);
+  font-size: 16px;
+  font-weight: 600;
+}
+.mypage_nav_wrap i {
+  font-size: 18px;
+  font-weight: bold;
+}
+.mypage_nav_wrap .mypage_nav_first {
+  color: var(--main-green);
+}
+
+/* All Contents */
+.mypage_contents {
+  width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  font-family: var(--kor);
+  /* box-sizing: border-box; */
+}
+
+/* Left Content */
+.mypage_contents aside {
+  width: 197px;
+  /* height: auto; */
+  border-right: 1px solid var(--gray);
+}
+.mypage_contents aside h2 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.mypage_contents aside .mypage_user_info {
+  border-bottom: 1px solid var(--gray);
+  padding: 30px 0;
+}
+.mypage_contents aside .mypage_user_info_title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.mypage_contents aside li:nth-child(2) {
+  margin-bottom: 20px;
+}
+/* JS로 할지 그냥 CSS로 넣을지 고민중 */
+.mypage_user_info li a.mypage_user_info_select,
+.mypage_user_info li a.mypage_user_info_select i {
+  color: var(--main-green);
+  font-weight: 700;
+}
+.mypage_user_info_select {
+  color: var(--main-green);
+  font-weight: 700;
+}
+/* Right Content */
+.mypage_userInfo,
+.mypage_shoppingInfo {
+  width: calc(100% - 197px);
+  min-height: calc(100vh - 331px);
+}
+.mypage_userInfo .mypage_article,
+.mypage_shoppingInfo .mypage_article {
+  width: calc(100% - 127px);
+  margin: 60px 0 150px 126px;
+  /* overflow-x: hidden; */
+}
+.mypage_article h2 {
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+  margin-bottom: 40px;
+}
+.mypage_article h2::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 8px;
+  background-color: var(--sub-green);
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -25px;
+}
+.mypage_article form {
+  position: relative;
+}
+
+/* Mypage - Check */
+.mypage_userInfo .mypage_userInfo_detail {
+  border: 1px solid var(--main-green);
+  border-radius: 5px;
+  padding: 30px 0 30px 50px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mypage_userInfo_detail_profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+.mypage_userInfo_detail_profile p {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.mypage_userInfo_detail_profile p:nth-child(2),
+.mypage_userInfo_detail_profile p:nth-child(3) {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.mypage_userInfo_detail_profile span.badge {
+  background-color: var(--main-green);
+  color: var(--white);
+  font-size: 14px;
+  font-family: var(--kor);
+  font-weight: 400;
+
+  display: inline-block;
+  text-align: center;
+  width: 120px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 30px;
+}
+.mypage_userInfo_detail_profile p span.name {
+  font-size: 22px;
+}
+.mypage_userInfo_detail_profile p span.name b {
+  color: var(--main-green);
+}
+.mypage_userInfo_detail_profile p span.user_code {
+  color: var(--main-green);
+  font-family: var(--eng);
+  font-size: 18px;
+  font-weight: 800;
+}
+.mypage_userInfo_detail_items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mypage_userInfo_detail_item {
+  /* width: 208px; */
+  width: 184px;
+  height: 120px;
+  text-align: center;
+  border-right: 1px solid var(--main-green);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mypage_userInfo_detail_item:last-child {
+  border-right: none;
+}
+.mypage_userInfo_detail_point,
+.mypage_userInfo_detail_coupon,
+.mypage_userInfo_detail_review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.mypage_userInfo_detail_item span {
+  display: inline-block;
+}
+.mypage_userInfo_detail_item .desc_top {
+  font-size: 20px;
+  font-family: var(--kor);
+  font-weight: 800;
+  color: var(--black);
+}
+.mypage_userInfo_detail_item .desc_bottom {
+  font-size: 20px;
+  font-family: var(--eng);
+  font-weight: 700;
+  color: var(--main-green);
+}
+
+/* Mypage - Edit(1) */
+.mypage_userInfo_identification {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.mypage_userInfo_identification form p {
+  font-size: 16px;
+  font-weight: 400;
+}
+.mypage_userInfo_identification form p:nth-child(1) {
+  margin-bottom: 5px;
+}
+.mypage_userInfo_identification form p span.highlight {
+  color: var(--main-green);
+  font-weight: 700;
+}
+.mypage_userInfo_identification table {
+  margin: 20px 0;
+  border-top: 2px solid var(--main-green);
+  width: 650px;
+  border-collapse: collapse;
+}
+.mypage_userInfo_identification th,
+.mypage_userInfo_identification td {
+  border: 1px solid var(--light-gray);
+  text-align: left;
+  padding: 10px 15px;
+  height: 55px;
+}
+.mypage_userInfo_identification th {
+  width: 130px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: var(--lightest-gray);
+}
+.mypage_userInfo_identification td input {
+  outline: none;
+  width: 190px;
+  padding: 5px 10px;
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+
+  font-family: var(--eng);
+}
+.mypage_userInfo_identification td input::placeholder {
+  color: var(--gray);
+}
+.mypage_userInfo_identification td .errorM_pw,
+.mypage_userInfo_identification td .errorM_code {
+  display: none;
+  font-size: 14px;
+  color: var(--red);
+  margin-left: 5px;
+}
+.mypage_userInfo_identification form .identification_btn {
+  display: inline-block;
+  width: 108px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+
+  background-color: var(--main-green);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+
+  cursor: pointer;
+}
+
+/* Mypage - Edit(2) */
+.mypage_userInfo_edit {
+  display: flex;
+  flex-direction: column;
+}
+.mypage_userInfo_edit table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.mypage_userInfo_edit th,
+.mypage_userInfo_edit td {
+  border: 1px solid var(--light-gray);
+  text-align: left;
+  height: 45px;
+  padding: 10px;
+}
+.mypage_userInfo_edit th {
+  width: 165px;
+  font-size: 14px;
+  font-weight: 800;
+  background-color: var(--lightest-gray);
+}
+.mypage_userInfo_edit td {
+  width: 595px;
+  font-size: 12px;
+}
+.mypage_userInfo_edit td input {
+  width: 186px;
+  height: 27px;
+  padding: 0 10px;
+
+  outline: none;
+  border: 1px solid var(--more-light-gray);
+  border-radius: 5px;
+  font-size: 12px;
+}
+.mypage_userInfo_edit td select {
+  height: 27px;
+  outline: none;
+  border: 1px solid var(--more-light-gray);
+  border-radius: 5px;
+
+  font-size: 12px;
+  text-align: center;
+}
+.mypage_userInfo_edit .birth {
+  width: 80px;
+  text-align: center;
+}
+.mypage_userInfo_edit .birthText {
+  display: inline-block;
+  width: 20px;
+  text-align: center;
+}
+.mypage_userInfo_edit .email {
+  width: 130px;
+  text-align: center;
+}
+.mypage_userInfo_edit input[type="radio"] {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--main-green);
+}
+.mypage_userInfo_edit .sms {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  /* border 겹쳐보여서 다시 정의함 */
+  border-top: none;
+  border-bottom: none;
+}
+.mypage_userInfo_edit .sms_yes {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.mypage_userInfo_edit .sms_no {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.mypage_userInfo_edit .search {
+  margin-bottom: 10px;
+}
+.mypage_userInfo_edit .search input {
+  width: 130px;
+}
+.mypage_userInfo_edit button {
+  padding: 5px 10px;
+  font-size: 12px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--more-light-gray);
+}
+.mypage_userInfo_edit .address_detail {
+  width: 295px;
+}
+.mypage_userInfo_edit .address_detail::placeholder {
+  color: var(--gray);
+}
+.mypage_userInfo_edit #phone {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.mypage_userInfo_edit #phone input {
+  text-align: center;
+  width: 70px;
+}
+.mypage_userInfo_edit #chk-num {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+.mypage_userInfo_edit #chk-num .input-num {
+  text-align: center;
+  width: 239px;
+  overflow: hidden;
+  letter-spacing: 1px;
+}
+.mypage_userInfo_edit #chk-num .input-num::placeholder {
+  color: var(--gray);
+}
+.mypage_userInfo_edit #chk-num span {
+  display: inline-block;
+  position: absolute;
+  left: 194px;
+  color: var(--red);
+}
+.mypage_userInfo_edit .edit-btn {
+  width: 760px;
+  text-align: center;
+}
+.mypage_userInfo_edit #editBtn {
+  display: inline-block;
+  width: 219px;
+  height: 45px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: var(--main-green);
+  color: var(--white);
+}
+.mypage_userInfo_edit .errorPw,
+.mypage_userInfo_edit .errorBirth,
+.mypage_userInfo_edit .errorEmail,
+.mypage_userInfo_edit .errorAddHome,
+.mypage_userInfo_edit .errorAddCenter,
+.mypage_userInfo_edit .errorPhone {
+  /* display: inline-block; */
+  display: none;
+  color: var(--red);
+  margin-left: 5px;
+}
+
+/* Mypage - Order */
+.mypage_shoppingInfo_order {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.mypage_shoppingInfo_order_check {
+  width: 100%;
+  border-radius: 5px;
+}
+.mypage_shoppingInfo_order_check .top {
+  width: 100%;
+  height: 132px;
+  border: 1px solid var(--gray);
+  border-bottom: none;
+  border-radius: 5px 5px 0 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.mypage_shoppingInfo_order_check .bottom {
+  width: 100%;
+  height: 132px;
+  border: 1px solid var(--gray);
+  border-radius: 0 0 5px 5px;
+  background-color: var(--more-light-gray);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+.mypage_shoppingInfo_order_check .top .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 196.426px;
+  height: 92px;
+  border-right: 1px solid var(--gray);
+}
+.mypage_shoppingInfo_order_check .top .desc:last-child {
+  border-right: none;
+}
+.mypage_shoppingInfo_order_check .top .desc span:nth-child(1) {
+  font-size: 18px;
+}
+.mypage_shoppingInfo_order_check .top .desc span:nth-child(2) {
+  font-size: 20px;
+  font-weight: 700;
+}
+.mypage_shoppingInfo_order_check .bottom .order_type,
+.mypage_shoppingInfo_order_check .bottom .inquiry_period {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 70px;
+}
+.mypage_shoppingInfo_order_check .bottom .title {
+  font-size: 16px;
+}
+.mypage_shoppingInfo_order_check .bottom .order_type .btn,
+.mypage_shoppingInfo_order_check .bottom .inquiry_period .date,
+.mypage_shoppingInfo_order_check .bottom .inquiry_period .period {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.mypage_shoppingInfo_order_check .bottom .order_type .btn span,
+.mypage_shoppingInfo_order_check .bottom .inquiry_period .btn .period span {
+  display: inline-block;
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  background-color: var(--white);
+  cursor: pointer;
+}
+.mypage_shoppingInfo_order_check .bottom .inquiry_period .btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.mypage_shoppingInfo_order_check .bottom .inquiry_period .btn .date input {
+  width: 165px;
+  height: 35px;
+  padding: 0 10px;
+  border: 1px solid var(--gray);
+  border-radius: 5px;
+  outline: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.selected_btn {
+  border: 1px solid var(--main-green) !important;
+  color: var(--main-green) !important;
+}
+.mypage_shoppingInfo_order .orderChk_btn {
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  margin: 20px 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+
+  border: none;
+  border-radius: 5px;
+  background-color: var(--main-green);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+.mypage_shoppingInfo_order_history {
+  width: 100%;
+  display: block;
+}
+.mypage_shoppingInfo_order_history .top_nav {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid var(--main-green);
+  border-bottom: 1px solid var(--main-green);
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 800;
+  text-align: center;
+}
+.mypage_shoppingInfo_order_history .orderInfo {
+  flex: 2.5;
+}
+.mypage_shoppingInfo_order_history .orderDate {
+  flex: 1;
+}
+.mypage_shoppingInfo_order_history .orderNumber {
+  flex: 1.5;
+}
+.mypage_shoppingInfo_order_history .orderPrice {
+  flex: 1;
+}
+.mypage_shoppingInfo_order_history .orderState {
+  flex: 1;
+}
+.mypage_shoppingInfo_order_history .contents {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--gray);
+
+  display: none;
+  flex-direction: row;
+  align-items: center;
+
+  text-align: center;
+  font-size: 14px;
+  font-weight: 800;
+}
+.mypage_shoppingInfo_order_history .contents.history2,
+.mypage_shoppingInfo_order_history .contents.history3,
+.mypage_shoppingInfo_order_history .contents.history4,
+.mypage_shoppingInfo_order_history .contents.reserve1 {
+  display: none;
+}
+.mypage_shoppingInfo_order_history .contents:last-child {
+  border-bottom: none;
+}
+.mypage_shoppingInfo_order_history .contents .orderInfo {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  text-align: left;
+}
+.mypage_shoppingInfo_order_history .contents .orderInfo div.photo {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+.mypage_shoppingInfo_order_history .contents .orderInfo div.pic1 {
+  background-image: url("/img/user_mall_best_item_6.jpeg");
+}
+.mypage_shoppingInfo_order_history .contents .orderInfo div.pic2 {
+  background-image: url("/img/user_mall_baby_item_8.jpeg");
+}
+.mypage_shoppingInfo_order_history .contents .orderInfo div.pic3 {
+  background-image: url("/img/user_mall_best_item_5.jpeg");
+}
+.mypage_shoppingInfo_order_history .contents .orderInfo div.pic4 {
+  background-image: url("/img/user_mall_best_item_4.jpeg");
+}
+.mypage_shoppingInfo_order_history .contents .orderInfo div.pic5 {
+  background-image: url("/img/user_mall_best_item_7.jpeg");
+}
+.mypage_shoppingInfo_order_history .contents .orderInfo div.pic6 {
+  background-image: url("/img/user_mall_mom_item_3.jpeg");
+}
+.mypage_shoppingInfo_order_history .contents .orderInfo div.pic7 {
+  background-image: url("/img/user_mall_food_item_1.jpeg");
+}
+.mypage_shoppingInfo_order_history .contents .desc {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+  font-size: 16px;
+}
+.mypage_shoppingInfo_order_history .contents .desc .product_detail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-weight: 400;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Mypage - Cart */
+.mypage_shoppingInfo_cart_select {
+  width: 100%;
+}
+.mypage_shoppingInfo_cart_select .top_nav {
+  width: 100%;
+  height: 50px;
+  border-top: 1px solid var(--main-green);
+  border-bottom: 1px solid var(--main-green);
+  padding: 0 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+.mypage_shoppingInfo_cart_select .top_nav .left label {
+  cursor: pointer;
+}
+/* Custom checkbox - select all */
+.mypage_shoppingInfo_cart_select .top_nav .left input[type="checkbox"] {
+  display: none;
+}
+.mypage_shoppingInfo_cart_select .top_nav .left input[type="checkbox"] + em {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 3px;
+}
+.mypage_shoppingInfo_cart_select
+  .top_nav
+  .left
+  input[type="checkbox"]
+  + em::before {
+  content: "\f058";
+  font-family: fontawesome;
+  font-size: 18px;
+  font-style: normal;
+  color: var(--gray);
+  display: inline-block;
+  transform: translateY(1px);
+}
+.mypage_shoppingInfo_cart_select
+  .top_nav
+  .left
+  input[type="checkbox"]:checked
+  + em::before {
+  color: var(--main-green);
+}
+.mypage_shoppingInfo_cart_select .top_nav .right span.delete {
+  cursor: pointer;
+}
+/* Custom checkbox - select one */
+.mypage_shoppingInfo_cart_select .contents label input[type="checkbox"] {
+  display: none;
+}
+.mypage_shoppingInfo_cart_select .contents label input[type="checkbox"] + em {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 3px;
+  cursor: pointer;
+}
+.mypage_shoppingInfo_cart_select
+  .contents
+  label
+  input[type="checkbox"]
+  + em::before {
+  content: "\f058";
+  font-family: fontawesome;
+  font-size: 18px;
+  font-style: normal;
+  color: var(--gray);
+  display: inline-block;
+  transform: translateY(1px);
+}
+.mypage_shoppingInfo_cart_select
+  .contents
+  label
+  input[type="checkbox"]:checked
+  + em::before {
+  color: var(--main-green);
+}
+
+.mypage_shoppingInfo_cart_select .contents {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+
+  padding: 20px 10px;
+  border-bottom: 1px solid var(--gray);
+}
+.mypage_shoppingInfo_cart_select .contents .productBox {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.mypage_shoppingInfo_cart_select .contents .productBox div.photo {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 120px;
+  height: 120px;
+}
+.mypage_shoppingInfo_cart_select .contents .productBox div.pic1 {
+  background-image: url("/img/user_mall_best_item_8.jpeg");
+}
+.mypage_shoppingInfo_cart_select .contents .productBox div.pic2 {
+  background-image: url("/img/user_mall_mom_item_4.jpeg");
+}
+.mypage_shoppingInfo_cart_select .contents .productBox div.pic3 {
+  background-image: url("/img/user_mall_best_item_2.jpeg");
+}
+.mypage_shoppingInfo_cart_select .contents .productBox div.desc {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+.mypage_shoppingInfo_cart_select
+  .contents
+  .productBox
+  div.desc
+  .product_detail {
+  position: absolute;
+  bottom: 0;
+
+  width: 510px;
+  height: 50px;
+  line-height: 50px;
+  background-color: var(--lightest-gray);
+  padding: 0 10px;
+  border-radius: 5px;
+  font-weight: 400;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mypage_shoppingInfo_cart_select
+  .contents
+  .productBox
+  div.desc
+  .product_detail
+  select {
+  width: 100px;
+  height: 35px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+.mypage_shoppingInfo_cart_select .contents #deleteProduct {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  font-size: 36px;
+  color: var(--dark-gray);
+  cursor: pointer;
+}
+.mypage_shoppingInfo_cart_select .contents p {
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--main-green);
+}
+.mypage_shoppingInfo_cart_select .contents #totalPrice {
+  color: var(--main-green);
+}
+/* total price */
+.mypage_shoppingInfo_cart_payment {
+  border-top: 3px solid var(--main-green);
+  border-bottom: 1px solid var(--main-green);
+  margin: 60px 0;
+  font-size: 18px;
+  font-weight: 800;
+}
+.mypage_shoppingInfo_cart_payment .final_payment_price {
+  margin: 20px 30px;
+}
+.mypage_shoppingInfo_cart_payment .order_box {
+  padding: 30px 30px;
+  border-top: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.mypage_shoppingInfo_cart_payment .order_box .orderPrice_box,
+.mypage_shoppingInfo_cart_payment .order_box .deliveryPrice_box,
+.mypage_shoppingInfo_cart_payment .final_box .finalPrice_box,
+.mypage_shoppingInfo_cart_payment .final_box .point_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.mypage_shoppingInfo_cart_payment .final_box {
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: var(--main-green);
+}
+.mypage_shoppingInfo_cart_payment .final_box div p,
+.mypage_shoppingInfo_cart_payment .final_box div span {
+  color: var(--main-green);
+}
+.mypage_shoppingInfo_cart_payment .final_box .point_box p {
+  font-weight: 400;
+}
+.mypage_shoppingInfo_cart #orderBtn {
+  width: 380px;
+  height: 60px;
+  /* line-height: 70px; */
+  text-align: center;
+  margin-left: 50%;
+  transform: translateX(-50%);
+
+  border: none;
+  border-radius: 5px;
+  background-color: var(--main-green);
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}

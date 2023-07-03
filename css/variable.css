@@ -1,0 +1,21 @@
+/* font family */
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900;1000&display=swap");
+
+:root {
+  /* font family */
+  --kor: "Nanum Gothic", sans-serif;
+  --eng: "Nunito", sans-serif;
+  /* color */
+  --main-green: #72981e;
+  --sub-green: #acc83d;
+  --red: #ff4545;
+  --yellow: #ffe457;
+  --black: #333333;
+  --dark-gray: #999999;
+  --gray: #cccccc;
+  --light-gray: #e9e9e9;
+  --more-light-gray: #eee;
+  --lightest-gray: #f7f7f7;
+  --white: #fff;
+}

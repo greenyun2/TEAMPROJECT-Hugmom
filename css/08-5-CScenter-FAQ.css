@@ -1,0 +1,167 @@
+/* Container */
+.container.CScenter_FAQ {
+  width: 1280px;
+  height: 100%;
+}
+
+/* Main */
+.CScenter_FAQ_main {
+  width: 100%;
+}
+
+/* Top Bar */
+.CScenter_FAQ_nav {
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid var(--gray);
+}
+.CScenter_FAQ_nav_wrap {
+  width: 1280px;
+  height: 40px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.CScenter_FAQ_nav_wrap span {
+  font-family: var(--kor);
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 600;
+}
+.CScenter_FAQ_nav_wrap .CScenter_FAQ_first {
+  color: var(--main-green);
+}
+
+/* CScenter FAQ Contents */
+.CScenter_FAQ_contents {
+  width: 1280px; 
+  height: calc(100vh - 427.33px);
+  margin: 0 auto;
+  display: flex;
+  font-family: var(--kor);
+  overflow: hidden;
+}
+/* CScenter FAQ Contents Aside */
+.CScenter_FAQ_contents aside {
+  width: 197px;
+  height: 100%;
+  overflow: hidden;
+  border-right: 1px solid var(--gray);
+}
+.CScenter_FAQ_contents aside h2 {
+  font-size: 24px;
+  font-weight: 800;
+  margin: 40px 0 20px;
+}
+.CScenter_FAQ_contents aside .CScenter_menu li:first-child {
+  margin: 30px 0 25px;
+}
+.CScenter_menu_FAQ {
+  color: var(--main-green);
+  font-size: 18px;
+  font-weight: 700;
+}
+.CScenter_menu_notice {
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* CScenter FAQ Right Section */
+.CScenter_FAQ_right {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* CScenter_FAQ_right > CScenter_info */
+.CScenter_info {
+  width: 989px;
+  margin: 66px 0 27px 100px;
+}
+/* CScenter_info > CScenter_info_tit */
+.CScenter_info .CScenter_info_tit {
+  color: var(--black);
+  font-family: var(--kor);
+
+  padding: 35px 0;
+  margin-bottom: 30px;
+  border-bottom: 3px solid var(--main-green);
+
+  position: relative;
+}
+.CScenter_info .CScenter_info_tit::before {
+  content: "";
+  width: 16px;
+  height: 8px;
+  background-color: var(--main-green);
+
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  transform: translateY(-50%);
+}
+/* CScenter_info_contents */
+.CScenter_info .CScenter_info_contents {
+  width: 100%;
+  height: 263px;
+
+  display: flex;
+
+  background-color: var(--lightest-gray);
+  border-radius: 5px;
+}
+/* CScenter_info_contents > CScenter_info_contents_left */
+.CScenter_info_contents_left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  margin: 46px 0 0 33px;
+}
+.CScenter_info_contents_left h2 {
+  color: var(--black);
+  margin-bottom: 13px;
+}
+.CScenter_info_contents_left h1 {
+  color: var(--black);
+  font-size: 32px;
+  margin-bottom: 35px;
+}
+.CScenter_info_contents_left h1 + p {
+  margin-bottom: 17px;
+}
+.CScenter_info_contents_left p {
+  font-size: 18px;
+  color: var(--black);
+}
+/* CScenter_info_contents > CScenter_info_contents_right */
+.CScenter_info_contents .CScenter_info_contents_right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CScenter_info_contents_right button {
+  width: 283px;
+  height: 70px;
+
+  border: none;
+  border-radius: 5px;
+
+  background-color: var(--main-green);
+  color: var(--white);
+
+  font-size: 24px;
+}
+
+/* CScenter_FAQ_info */
+.CScenter_FAQ_info {
+  border: 1px solid blue;
+  width: 989px;
+  margin-left: 100px;
+}

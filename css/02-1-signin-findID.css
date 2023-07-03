@@ -1,0 +1,188 @@
+.container.signin_findId {
+  width: 100%;
+  /* height: 100vh; */
+  font-family: var(--kor);
+  color: var(--black);
+}
+
+/* singin find main */
+.signin_findId_main {
+  width: 1280px;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+  /* border: 1px solid tomato; */
+}
+
+/* Hugmom logo */
+.singin_find_logo {
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid tomato; */
+}
+
+/* title 영역 */
+.signin_find_title {
+  width: 400px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.signin_find_title h1 {
+  font-size: 24px;
+  /* margin-bottom: 10px; */
+}
+
+/* form 영역 */
+.signin_find_form {
+  height: 500px;
+  width: 400px;
+  /* border: 1px solid green; */
+}
+/* 휴대폰 인증 이메일 인증 탭 */
+.signin_find_tapMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.signin_find_tapMenu > input {
+  display: none;
+}
+nav.find_buttons {
+  overflow: hidden;
+}
+nav.find_buttons > label {
+  display: block;
+  float: left;
+  /* border: 1px solid tomato; */
+  border-bottom: 1px solid var(--gray);
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+input.signin_find_radio:nth-of-type(1):checked
+  ~ nav.find_buttons
+  > label:nth-of-type(1) {
+  border-bottom: 2px solid var(--main-green);
+}
+input.signin_find_radio:nth-of-type(2):checked
+  ~ nav.find_buttons
+  > label:nth-of-type(2) {
+  border-bottom: 2px solid var(--main-green);
+}
+.signin_find_radio:nth-of-type(1) {
+  display: none;
+}
+.signin_find_radio:nth-of-type(2) {
+  display: none;
+}
+.signin_find_radio:nth-of-type(1) ~ div:nth-of-type(1) {
+  display: none;
+}
+.signin_find_radio:nth-of-type(1):checked ~ div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+}
+.signin_find_radio:nth-of-type(2) ~ div:nth-of-type(2) {
+  display: none;
+}
+.signin_find_radio:nth-of-type(2):checked ~ div:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 인풋 박스 */
+.tap.for_phone {
+  width: 100%;
+}
+.tap.for_phone ul li,
+.tap.for_email ul li {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.tap.for_phone ul li input,
+.tap.for_email ul li input {
+  height: 60px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--main-green);
+  border-radius: 5px;
+}
+.tap.for_phone ul li input:focus,
+.tap.for_email ul li input:focus {
+  outline: none;
+  border: 2px solid var(--main-green);
+}
+/* 입력 없을 시 쓰는 문장 */
+.tap.for_phone ul li span,
+.tap.for_email ul li span {
+  display: none;
+  font-size: 12px;
+  padding-left: 5px;
+  color: var(--red);
+}
+.find_get_token,
+.find_get_email {
+  width: 300px;
+  margin: 20px auto;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: var(--main-green);
+  color: var(--white);
+  font-size: 18px;
+}
+
+/* Mobile ver */
+@media all and (max-width: 768px) {
+  .container.signin_findId {
+    width: 100vw;
+  }
+  .signin_findId_main {
+    width: 100vw;
+    height: 950px;
+    /* justify-content: flex-start; */
+  }
+  .singin_find_logo {
+    width: 75%;
+    height: 180px;
+    margin-bottom: 30px;
+  }
+  .singin_find_logo img {
+    width: inherit;
+  }
+  .signin_find_form {
+    width: 90%;
+  }
+  nav.find_buttons {
+    width: 100%;
+    /* border: 1px solid tomato; */
+    display: flex;
+    justify-content: center;
+  }
+  nav.find_buttons > label {
+    width: 200px;
+  }
+  .tap.for_phone,
+  .tap.for_email {
+    width: 360px;
+  }
+  .find_get_token,
+  .find_get_email {
+    width: 220px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 18px;
+  }
+}
